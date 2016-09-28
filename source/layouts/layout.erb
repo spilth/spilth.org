@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title><%= current_page.data.title || "spilth.org" %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patua+One|Source+Code+Pro" rel="stylesheet">
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+
+    <script src="https://use.fontawesome.com/488eaeeb3f.js"></script>
+  </head>
+
+  <body>
+    <h1><%= current_page.data.title %></h1>
+
+    <%= yield %>
+  </body>
+</html>

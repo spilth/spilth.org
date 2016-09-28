@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+html {
+  font-size: 24px;
+}
+
+body {
+  background: #F7F7F7;
+  color: #3E3F41;
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Patua One', cursive;
+}
+
+h1 {
+  margin-bottom: 0.2em;
+  font-size: 1.8rem;
+  color: #2C2918;
+  line-height: 1.2em;
+}
+
+h2 {
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  color: #2C2918;
+}
+
+p {
+  margin-top: 0em;
+}
+
+.fa {
+  color: #3E3F41;
+}
+
+dt .fa:before {
+  padding-left: 1.9rem;
+}
+
+dt {
+  font-family: 'Patua One', cursive;
+  font-size: 1.2rem;
+  padding-left: 1.9rem;
+  text-indent: -1.9rem;
+}
+
+dd {
+  margin-top: 0.3em;
+  margin-bottom: 1.6em;
+  margin-left: 2.4em;
+  font-size: 0.8rem;
+}
+
+ul.profiles {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.profiles li {
+  font-size: 1.0rem;
+  margin-bottom: 0.4em;
+}
+
+a {
+  color: #3E3F41;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  background: #fff;
+  color: #3E3F41;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border-radius: 4px;
+}
+
