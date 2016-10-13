@@ -1,0 +1,30 @@
+-
+  title: Logic Pro X Discord Server
+  description: A Discord server for Logic Pro X users to chat, ask questions and show off tracks.
+  url: https://t.co/vkspDU2PhD
+  icon: fa-users
+-
+  title: Getting Started with Logic Pro X
+  description: A blog post describing my setup process for Logic Pro X on a new machine.
+  url: /blog/2016/09/10/logic-pro-getting-started/
+  icon: fa-newspaper-o
+-
+  title: Action Game Track
+  description: A loopable piece of game music done in the style of Contra. Good for an action game.
+  url: https://spilth.bandcamp.com/track/action-game
+  icon: fa-music
+-
+  title: Water Level Track
+  description: A loopable piece of game music that follows the song structure of Super Mario Brothers Level 1 theme music. Likely good for an underwater level.
+  url: https://spilth.bandcamp.com/track/water-level
+  icon: fa-music
+-
+  title: Songmuse
+  description: A growing set of tools to help inspire songwriting.
+  url: https://songmuse.herokuapp.com
+  icon: fa-magic
+-
+  title: 36 Questions
+  description: A set of questions to help generate closeness between two people.
+  url: http://36questions.life/
+  icon: fa-heart

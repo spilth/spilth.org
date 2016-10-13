@@ -7,20 +7,13 @@ title: Welcome!
 <h2>Creations</h2>
 
 <dl>
-  <dt><i class="fa fa-fw fa-newspaper-o" aria-hidden="true"></i> <a href="/blog/2016/09/10/logic-pro-getting-started/">Getting Started with Logic Pro X</a></dt>
-  <dd>A blog post describing my setup process for Logic Pro X on a new machine.</dd>
-
-  <dt><i class="fa fa-fw fa-music" aria-hidden="true"></i> <a href="https://spilth.bandcamp.com/track/action-game">Action Game</a></dt>
-  <dd>A loopable piece of game music done in the style of Contra. Good for an action game.</dd>
-
-  <dt><i class="fa fa-fw fa-music" aria-hidden="true"></i> <a href="https://spilth.bandcamp.com/track/water-level">Water Level</a></dt>
-  <dd>A loopable piece of game music that follows the song structure of Super Mario Brothers Level 1 theme music. Likely good for an underwater level.</dd>
-
-  <dt><i class="fa fa-fw fa-magic" aria-hidden="true"></i> <a href="https://songmuse.herokuapp.com">Songmuse</a></dt>
-  <dd>A growing set of tools to help inspire songwriting.</dd>
-
-  <dt><i class="fa fa-fw fa-heart" aria-hidden="true"></i> <a href="http://36questions.life/">36 Questions</a></dt>
-  <dd>A set of questions to help generate closeness between two people.</dd>
+  <% data.projects.each do |project| %>
+    <dt>
+      <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
+      <a href="<%= project.url %>"><%= project.title %></a>
+    </dt>
+    <dd><%= project.description %></dd>
+  <% end %>
 
   <dt><i class="fa fa-fw fa-newspaper-o" aria-hidden="true"></i> <a href="/blog/2016/03/21/logic-pro-collaboration-tips/">Logic Pro X Collaboration Tips and Techniques</a></dt>
   <dd>A collection of useful tips and techniques for collaborating with others using Logic Pro X.</dd>
