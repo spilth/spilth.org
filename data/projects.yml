@@ -28,3 +28,158 @@
   description: A set of questions to help generate closeness between two people.
   url: http://36questions.life/
   icon: fa-heart
+-
+  icon: fa-newspaper-o
+  url: /blog/2016/03/21/logic-pro-collaboration-tips/
+  title: Logic Pro X Collaboration Tips and Techniques
+  description: A collection of useful tips and techniques for collaborating with others using Logic Pro X.
+-
+  icon: fa-newspaper-o
+  url: /blog/2016/03/06/song-a-month-new-reflection-only-a-dream/
+  title: Reflection a Month - Only A Dream
+  description: Some background and thoughts on my first song-a-month song, Only A Dream
+-
+  icon: fa-music
+  url: https://soundcloud.com/spilth/carnival-of-sorts-rem-cover-by-oliver-switzer-brian-kelly
+  title: Carnival of Sorts (Cover)
+  description: A cover of an old R.E.M. song, done with Oliver Switzer
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/cool-with-it
+  title: Cool With It
+  description: A song-a-month guitar piece done in February of 2016.
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/carry-on
+  title: Carry On
+  description: A song-a-month song done in only 24 hours. This was my personal anthem in January of 2016.
+-
+  icon: fa-book
+  url: http://tdd.spilth.org
+  title: TDD All the Languages!
+  description: An ongoing project in which I describe how to install, initialize, set up dependencies for and test a Piglatin library for every programming langage out there.
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/for-j
+  title: For J
+  description: Song-a-month song done within a couple hours of breakup in December of 2015.
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/first-flight
+  title: First Flight
+  description: November 2015's song-a-month songs. Another guitar instrumental, this time in 7/8.
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/its-the-same-for-everybody-else-here
+  title: It's the Same for Everybody Else Here
+  description: A bass-centric song-a-month song for October 2015.
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/carriel
+  title: Carriel
+  description: For September's song-a-month this guitar shredder piece came out of nowhere. A poor man's Joe Satriani!
+-
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/only-a-dream
+  title: Only A Dream
+  description: August's song-a-month written while being away from a loved one.
+-
+  icon: fa-youtube
+  url: https://www.youtube.com/playlist?list=PL0qpO5Cy9JanIuFqJv1Xldz0LkXRDNmQa
+  title: Annotated Spring
+  description: A short-lived series of screencasts showing how to build web applications using Spring and Java, inspired by RailsCasts.
+-
+  icon: fa-file-powerpoint-o
+  url: http://presentations.spilth.org/spring-boot-for-rails-developers/#1
+  title: Spring Boot for Rails Developers
+  description: A presentation showin Rails developers how to accomplish the same things with Spring Boot.
+-
+  icon: fa-diamond
+  url: https://github.com/spilth/little_bits
+  title: littleBits Ruby Gem
+  description: A Ruby Gem for controlling the littleBits cloudBit and Arduino Module.
+-
+  icon: fa-gears
+  url: http://littlebits.cc/projects/easyjam-2
+  title: EasyJam 2
+  description: A littleBits project that lets you play music with a slider by mapping it to one of five different scales.
+-
+  icon: fa-diamond
+  url: https://github.com/spilth/l8
+  title: l8 Ruby Gem
+  description: A Ruby gem for controlling a single or group of l8 Smartlights.
+-
+  icon: fa-gamepad
+  url: http://astrosmash.spilth.org
+  title: Astrosmash Phaser Clone
+  description: A simple clone of Astrosmash using PhaserJS.
+-
+  icon: fa-diamond
+  url: https://github.com/spilth/ubyray
+  title: ubyray Ruby Gem
+  description: A Ruby gem for translating english words to Piglatin.
+-
+  icon: fa-music
+  url: https://soundcloud.com/spilth/mellotroid-theme
+  title: Mellotroid
+  description: The theme to Metroid, if it was performed by 1970's Genesis.
+-
+  icon: fa-map-o
+  url: http://wmba.org/?page_id=361
+  title: Granite Knolls Park Trail Map
+  description: A trail map for mountain biking in Granite Knolls.
+-
+  icon: fa-map-o
+  url: http://wmba.org/?page_id=364
+  title: Woodlands Legacy Fields Park Trail Map
+  description: A trail map for mountain biking in Woodlands Legacy Fields Park.
+-
+  icon: fa-map-o
+  url: http://wmba.org/?page_id=64
+  title: Graham Hills Park Trail Map
+  description: The first mountain biking trail map I ever made for the park that helped start my mountain biking journey.
+-
+  icon: fa-gamepad
+  url: http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=2895
+  title: Super Minimalistic
+  description: My entry for Ludum Dare 26 in April of 2013. A game where you do your best to avoid picking anything up, no matter how shiny and tempting!
+-
+  icon: fa-gamepad
+  url: http://ludumdare.com/compo/ludum-dare-23/?action=preview&uid=2895
+  title: Tiny World
+  description: A tiny, incomplete game written using Ruby/Chingu for Ludum Dare in April of 2012.
+-
+  icon: fa-book
+  url: https://www.gitbook.com/book/spilth/pragmatic-guide-to-maven-3/details
+  title: Pragmatic Guide to Maven
+  description: My attempt a writing a book in the style of the Pragmatic Guides for Maven during PragProWriMo.
+-
+  icon: fa-database
+  url: http://dracosaur.us
+  title: D &amp; D Miniatures Database
+  description: A Rails app for tracking your collect of D &amp; D miniatures.
+-
+  icon: fa-gamepad
+  url: https://vimeo.com/14423454
+  title: Marble Mania 2003
+  description: An Unreal Tournament 2003 mod version of one of my all-time favorite arcade games - Marble Madness.
+-
+  icon: fa-gamepad
+  url: http://planetunreal.gamespy.com/View7ace.html?view=Articles.Detail&id=82
+  title: Scavenger Hunt
+  description: A capture the flag variant created for the original Unreal Tournament.
+-
+  icon: fa-music
+  url: https://thelaundryroom.bandcamp.com/album/the-laundry-room
+  title: The Laundry Room - Self Titled Album
+  description: My college band's self-titled album.
+-
+  icon: fa-music
+  url: https://thelaundryroom.bandcamp.com/album/5-song-e-p
+  title: The Laundry Room - 5 Song E.P.
+  description: My college band's 5 song CD. That's a compact disc for you young ones.
+-
+  icon: fa-file-text-o
+  url: http://resume.spilth.org
+  title: My Resume
+  description: If you've made it this far and you're interested in hiring me.
