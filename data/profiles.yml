@@ -11,14 +11,6 @@
   url: https://www.facebook.com/spilth
   title: Facebook
 -
-  icon: fa-money
-  url: https://www.fiverr.com/spilth
-  title: Fiverr
--
-  icon: fa-briefcase
-  url: https://www.freelancer.com/u/spilth.html
-  title: Freelancer
--
   icon: fa-github
   url: https://github.com/spilth
   title: GitHub
@@ -34,10 +26,6 @@
   icon: fa-users
   url: https://www.meetup.com/members/8597969/
   title: Meetup
--
-  icon: fa-money
-  url: https://www.patreon.com/spilth
-  title: Patreon
 -
   icon: fa-soundcloud
   url: https://soundcloud.com/spilth
