@@ -1,4 +1,9 @@
 -
+  title: savant
+  description: Command-line tool for searching for Java dependencies in Maven Central.
+  url: https://github.com/spilth/savant
+  icon: fa-terminal
+-
   title: Logic Pro X Discord Server
   description: A Discord server for Logic Pro X users to chat, ask questions and show off tracks.
   url: https://t.co/vkspDU2PhD
