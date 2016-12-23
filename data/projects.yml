@@ -1,4 +1,9 @@
 -
+  title: Using Maven to Build a Web Site for Your Java Project
+  description: A blog post describing how to easily build web sites for Maven projects
+  url: /blog/2016/12/23/building-maven-project-sites
+  icon: fa-newspaper-o
+-
   title: savant
   description: Command-line tool for searching for Java dependencies in Maven Central.
   url: https://github.com/spilth/savant
