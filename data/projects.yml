@@ -9,11 +9,6 @@
   url: projects/savant
   icon: fa-terminal
 -
-  title: Logic Pro X Discord Server
-  description: A Discord server for Logic Pro X users to chat, ask questions and show off tracks.
-  url: https://t.co/vkspDU2PhD
-  icon: fa-users
--
   title: Getting Started with Logic Pro X
   description: A blog post describing my setup process for Logic Pro X on a new machine.
   url: /blog/2016/09/10/logic-pro-getting-started/
