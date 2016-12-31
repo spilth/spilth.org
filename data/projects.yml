@@ -1,6 +1,11 @@
 -
+  title: Java Development on macOS
+  description: A blog post describing how to install Java and associated development tools.
+  url: /blog/2016/12/31/java-development-macos
+  icon: fa-newspaper-o
+-
   title: Using Maven to Build a Web Site for Your Java Project
-  description: A blog post describing how to easily build web sites for Maven projects
+  description: A blog post describing how to easily build web sites for Maven projects.
   url: /blog/2016/12/23/building-maven-project-sites
   icon: fa-newspaper-o
 -
