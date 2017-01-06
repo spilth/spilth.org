@@ -7,9 +7,8 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = "post"
 end
-configure :build do
 
-end
+activate :middleman_simple_thumbnailer
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket = 'spilth.org'

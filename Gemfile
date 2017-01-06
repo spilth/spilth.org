@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '>= 4.0.0'
+gem 'middleman'
 gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
-gem 'middleman-s3_sync', '4.0.3'
+gem 'middleman-compass'
+gem 'middleman-s3_sync'
 gem 'middleman-blog'
 gem 'middleman-syntax'
+gem 'middleman-simple-thumbnailer'
 
 gem 'mime-types'
 gem 'redcarpet'
