@@ -1,0 +1,548 @@
+name: title
+class: middle, center
+
+# Spring Boot for Rails Developers
+
+Brian Kelly
+
+---
+
+# Things I'm Assuming
+
+- You're on a Mac
+- You know Ruby on Rails
+- You have a healthy and up to date install of [Homebrew](http://brew.sh/)
+  - Hint: Use `brew update` and `brew doctor`
+- You're using a Java IDE that auto-import classes for you
+  - Hint: [IntelliJ IDEA](https://www.jetbrains.com/idea/) is awesome
+
+---
+
+#  Why should I use Spring Boot?
+
+- I don't know
+- I don't care
+- Let's go learn how to be productive with Java and Spring Boot
+
+---
+
+# Java Version Manager?
+
+Just download and install the [Java Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) for your OS.
+
+- Java is backward compatible: You can compile 1.3 through 1.8 code using the 1.8 SDK
+- You likely won't need to support multiple Java versions
+- You should be using the latest version of 8 anyways
+- There is no automated installer (license agreement required)
+
+---
+
+# Rake?
+
+Use [Apache Maven](https://maven.apache.org) or [Gradle](http://gradle.org):
+
+```sh
+$ brew install maven
+$ brew install gradle
+```
+
+- Maven uses XML but has been around longer
+- Gradle doesn't use XML but hasn't been around as long
+
+---
+
+# gem install rails
+
+Add the `pivotal` tap and install the [Spring Boot CLI](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cli)
+
+```sh
+$ brew tap pivotal/tap
+$ brew install springboot
+```
+
+---
+
+# rails new blog
+
+```sh
+$ spring init blog -d=web,data-jpa,h2,freemarker
+$ cd foo
+$ mvn dependency:resolve
+```
+
+- `blog` is the name of the project/directory
+- `-d` lets you add dependencies
+- Spring Boot CLI uses Maven by default
+- Add `--build gradle` to use Gradle instead
+- Use `spring help init` to learn more
+
+---
+
+# Why all these extra dependencies?
+
+- You can build more than just web sites with Spring Boot
+- `web` is Spring MVC (web framework) & embedded Tomcat (application server)
+- `h2` is an in-memory database (approximate equivalent of SQLite)
+- `data-jpa` is like the class methods of an ActiveRecord model
+- `freemarker` is a templating engine
+- Use `spring init --list` to see what else is available.
+
+---
+
+# rails s
+
+Use the `spring-boot:run` goal provided by the Spring Maven/Gradle Plugin (already added by the `init` command)
+
+```sh
+$ mvn spring-boot:run
+```
+
+Then visit <http://localhost:8080/>
+
+---
+
+# rails generate scaffold Post title content:string
+
+Spring Boot doesn't have code generators. This is intentional.
+
+> Absolutely no code generation and no requirement for XML configuration
+
+---
+
+# routes.rb
+
+- There is no central place to define routes.
+- Mapping a URL pattern/HTTP verb to a class's instance method is done by:
+  - annotating a class with `@Controller`
+  - annotating a public method with `@RequestMapping`.
+
+```java
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class PagesController {
+    @RequestMapping("/")
+    public String home() {
+        return "home";
+    }
+}
+```
+
+- `@Controller` tells Spring to check this class for `RequestMappings`
+- [`@RequestMapping`](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) associates a method with a path, HTTP verb, headers, params, etc.
+
+---
+
+# path_for
+
+- There are no `path_for` or `url_for` helper methods.
+
+
+---
+
+# resources :photos
+
+--
+
+```java
+@RequestMapping("/photos")
+public class PhotosController {
+    @RequestMapping(value = "/", method = RequestType.GET)
+    public String listPhotos() { ... }
+
+    @RequestMapping(value = "/new", method = RequestType.GET)
+    public String newPhoto() { ... }
+
+    @RequestMapping(value = "/", method = RequestType.POST)
+    public String createPhoto() { ... }
+
+    @RequestMapping(value = "/{photoId}", method = RequestType.GET)
+    public String showPhoto(@PathVariable("photoId") Integer id, Model model) { ... }
+
+    @RequestMapping(value = "/{photoId}/edit", method = RequestType.GET)
+    public String editPhoto(@PathVariable("photoId") Integer id, Model model) { ... }
+
+    @RequestMapping(value = "/{photoId}", method = RequestType.PUT)
+    public String updatePhoto() { ... }
+
+    @RequestMapping(value = "/", method = RequestType.DELETE)
+    public String deletePhoto() { ... }
+}
+```
+
+---
+
+# rails generate controller PhotosController
+
+--
+
+> Absolutely no code generation and no requirement for XML configuration
+
+---
+
+# Ugh, really?
+
+You could give [Spring Composed](https://github.com/sbrannen/spring-composed) a try.
+
+This:
+
+```java
+@RequestMapping(method = GET, value = "/photos")
+```
+
+Becomes:
+
+```java
+@Get(value = "/photos")
+```
+
+Or just:
+
+```java
+@Get("/photos")
+```
+
+---
+
+# rails g model Post title content:text
+
+- Use [Spring Data JPA](http://projects.spring.io/spring-data-jpa/)
+- Model means something else in Spring-land
+  - It's what you pass to the view
+- Use `@Entity` on your "model" class
+
+```java
+@Entity(name = "categories")
+public class Category {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+    private Long groupId;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "categoryId")
+    @Where(clause = "enabled = 1")
+    @OrderBy("name")
+    private Set<Project> projects;
+}
+```
+
+---
+# Model.find
+
+- Extend [CrudRepository](http://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html)
+
+```java
+public interface CategoriesRepository
+  extends CrudRepository<Category, Long> {
+}
+```
+
+```java
+@Controller
+@RequestMapping("/admin/categories")
+public class CategoriesAdminController {
+    @Autowired
+    private CategoriesRepository categoriesRepository;
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String categoryIndex(Model model) {
+        model.addAttribute("categories",
+          categoriesRepository.findAll());
+
+        return "admin/categories/index";
+    }
+}
+```
+---
+
+# Model.where().order().limit()
+
+- Use [Spring Data JPA Query Methods](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation)
+
+```java
+public interface CategoriesRepository
+  extends CrudRepository<Category, Long> {
+    List<Category> findAllByOrderByNameAsc();
+}
+```
+
+```java
+@Controller
+public class CategoriesController {
+    @Autowired
+    CategoriesRepository categoriesRepository;
+
+    @RequestMapping(
+      value = "/categories",
+      method = RequestMethod.GET)
+    public String categoryIndex(Model model) {
+        model.addAttribute("categories", categoriesRepository.findAllByOrderByNameAsc());
+        return "categories/index";
+    }
+}
+```
+---
+
+# model.valid?
+
+- Add a BindingResult in your controller's method
+- Use @Valid on your entity argument
+- Add validation annotations to your Entity
+- Check the BindingResult
+
+---
+
+# model.save
+
+- Use the CrudRepository you created
+
+---
+
+# Model.findOne()
+
+- Use the CrudRepository you created
+
+---
+
+# Model.findAllByTitle, etc.
+
+- Add query methods to your CrudRepository
+
+---
+
+# has_many :comments
+
+---
+
+# rake db:migrate
+
+---
+
+# config.cache_classes=false
+
+---
+
+# Gemfile
+
+---
+
+# Rakefile
+
+---
+
+# Before/After Filters
+
+---
+
+# Model Hooks
+
+---
+
+# The Table
+
+| Rails | Spring |
+|-------|--------|
+| Controller      | Controller        |
+| - instance variables | - model |
+| Model | Entity |
+| Model query method | CrudRepository methods |
+
+
+---
+
+# Deploying to PWS
+
+---
+
+# rake spec
+
+To just run unit tests (using the [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/)):
+
+```sh
+mvn test
+```
+
+To run unit tests and integration tests (using the [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/)):
+
+```sh
+mvn verify
+```
+
+---
+
+# Development, Test & Production
+
+- No intrinsic concept of these environments
+- Use [Spring Profiles](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-profiles.html) to represent different environments
+- Create a property file for each environment:
+  - `application-development.propreties`
+  - `application-test.propreties`
+  - `application-production.propreties`
+- Specify the profile you want to use:
+  - `mvn spring-boot:run -D
+  spring.profiles.active=development`
+
+---
+
+# Combine Maven & Spring Profiles
+
+`pom.xml` profiles section:
+
+```xml
+<profiles>
+    <profile>
+        <id>development</id>
+        <properties><spring.profiles.active>development</spring.profiles.active></properties>
+        <build><defaultGoal>clean spring-boot:run</defaultGoal></build>
+    </profile>
+    <profile>
+        <id>test</id>
+        <properties><spring.profiles.active>test</spring.profiles.active></properties>
+        <build><defaultGoal>clean verify</defaultGoal></build>
+    </profile>
+    <profile>
+        <id>production</id>
+        <properties><spring.active.profiles>production</spring.active.profiles></properties>
+        <build><defaultGoal>clean spring-boot:run</defaultGoal></build>
+    </profile>
+</profiles>
+```
+
+---
+
+# Combine Maven & Spring Profiles
+
+`pom.xml` build section:
+
+```xml
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <jvmArguments>-Dspring.profiles.active=${spring.profiles.active}</jvmArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+</build>
+```
+
+Now we can just run:
+
+```sh
+mvn -P development
+```
+
+---
+
+# rails c
+
+---
+
+# Using PostgreSQL/MySQL in Production
+
+---
+
+# Including Bootstrap & jQuery
+
+---
+
+# Internationalization
+
+- In `src/main/resources/application.properties` set your locale and auto-import [Spring template macros](http://docs.spring.io/autorepo/docs/spring/current/spring-framework-reference/html/view.html#views-form-macros):
+  - `spring.mvc.locale=en_US`
+  - `spring.freemarker.settings.auto_import=/spring.ftl as spring`
+- Create a `message_en_US.properties` in `src/main/resources`
+  - `site.title=Annotated Spring`
+- In your templates use the `message` macro
+  - `<@spring.message "site.tite" />`
+
+---
+
+# Controller Filters
+
+---
+
+# Devise et al.
+
+- Spring Security
+
+---
+
+# Rest APIs
+
+- Spring Data REST
+
+---
+
+# How do I make a Gem?
+
+---
+
+# TDD & BDD
+
+---
+
+# What's Missing?
+
+Things I haven't found yet:
+
+- an easier way to make CRUD controllers
+- an easier way to make forms
+- an easier way to generate models
+- no path/url_for
+
+---
+
+# Rubyisms
+
+- attr_accessor -> Project Lombok
+
+---
+
+# General Advice
+
+- look for an auto-completed property in `application.properties` first
+- use Java Config, not XML
+- make sure you're looking at the current API
+- learn about the frequently used annotations
+
+---
+
+# HELP!
+
+- [java-toolbox.com](http://www.java-toolbox.com/) - Java Libraries, Plug-ins and Tools
+- [Everyday Spring Boot Testing](https://github.com/spilth/everydayspringtesting)
+- Vagrant VMs for commonly-used Enterprise Application Servers (JBoss, WebSphere, etc.)
+  - For when the embedded Tomcat isn't an option
+
+---
+
+#  Plugs
+
+- [www.annotatedspring.com](http://www.annotatedspring.com/) - Spring Screencasts
+- [www.java-toolbox.com](http://www.java-toolbox.com/) - Java Libraries, Plug-ins and Tools
+- Hint: I'm ~~stealing from~~ inspired by the Ruby community
+
+---
+
+# Talk To Do
+
+- how to debug?
+  - navigating the landscape
+  - googling for stuff is hard
+  - so many versions, so many bad example
+- how do annotations work?
+- what is the overall landscape?
+- how to make links render in Remark?
+- Flyway Migrations - <https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html#howto-execute-flyway-database-migrations-on-startup>
+---
+
+# Back in the day...
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/lrgFSTbE5n8" frameborder="0" allowfullscreen></iframe>
+

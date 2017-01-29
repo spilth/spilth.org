@@ -100,7 +100,7 @@
   description: A short-lived series of screencasts showing how to build web applications using Spring and Java, inspired by RailsCasts.
 -
   icon: fa-file-powerpoint-o
-  url: http://presentations.spilth.org/spring-boot-for-rails-developers/#1
+  url: /presentations/spring-boot-for-rails-developers/
   title: Spring Boot for Rails Developers
   description: A presentation showin Rails developers how to accomplish the same things with Spring Boot.
 -

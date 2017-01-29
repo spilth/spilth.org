@@ -1,0 +1,258 @@
+name: title
+class: middle, center
+
+# Productive Mac Development
+
+Brian Kelly
+
+---
+
+# Prerequisites
+
+- You're on a Mac
+- You have administrative rights on your machine
+- You have an App Store account
+
+---
+
+# Upgrade to the latest macOS
+
+- You can get [macOS Sierra from the App Store](https://itunes.apple.com/us/app/macos-sierra/id1127487414?mt=12) for free
+
+---
+
+# Install the latest XCode
+
+- You can get [XCode from the App Store](https://itunes.apple.com/us/app/xcode/id497799835) for free
+- Many development tools rely on having XCode installed
+
+---
+
+# Start Apps Quickly
+
+- Hold down the Command key (⌘) and press the space bar
+- The `Spotlight Search` window pops up
+- Type the name of application you want to start, for example `Terminal`
+- Press enter
+- This is much faster than using the Dock or Finder
+
+---
+
+# Switch Apps Quickly
+
+- Hold down the Command key (⌘) and tap the Tab key repeatedly
+- This will take you through your open Apps
+- When you let go of the Command key you'll switch to the selected app
+- You can hold down Shift to go backwards
+
+---
+
+# Quit Apps Quickly
+
+- Switch back to Terminal
+- Hold down the Command key (⌘) and press `Q`
+
+---
+
+# Agree to the XCode License
+
+- Start Terinal using Spotlight (Slide 5)
+- In the Terminal window that pops up, type the following:
+  - `sudo xcodebuild -license`
+- It will ask for your password (the one you log into your computer with)
+- Press `q` to jump to the end of the license
+- Type `agree` and press return to agree to the license
+
+---
+
+# What is sudo?
+
+- `sudo` lets you run commands as another user.
+- By default that user is `root`, which has access too all commands and files on the system.
+- You should have to use `sudo` very infrequently.
+
+---
+
+# Use Homebrew
+
+[Homebrew](http://brew.sh) is a Package Manager. You use Homebrew to install, update and manage Packages.
+
+Packages can be:
+
+- **Applications** such as Spotify, Sublime Text or Slack
+- **Services** such as MySQL, Apache or Elasticsearch
+- **Languages** such as Ruby, Python or Node
+- **Command-Line Tools** such as ImageMagick, Maven or Grunt
+
+While you are developing software you will likely need to install a number of these packages.
+
+---
+
+# Install Homebrew
+
+- Start Terminal using Spotlight
+- Copy and paste the following into your Terminal window:
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+---
+
+# Keep Homebrew Happy
+
+Run the following commands semi-regularly:
+
+- `brew update` to keep Homebrew up to date.
+- `brew doctor` to keep Homebrew healthy.
+  - This may give you some information to act on, which you should.
+- `brew cleanup` to keep Homebrew slim by uninstalling old versions of packages.
+
+---
+
+# Use iTerm2
+
+[iTerm 2](https://www.iterm2.com/) is an arguably better version of Terminal.
+
+- In your Terminal window type `brew cask install iterm2`
+- Then use Spotlight to start iTerm 2
+- Switch to Terminal and quit it
+
+---
+
+# What is a cask?
+
+TK
+
+---
+
+# Install ShiftIt
+
+[ShiftIt](https://github.com/fikovnik/ShiftIt) is a tool that lets you easily manage your appliation's windows using the keyboard instead of the mouse.
+
+You can install it using Homebrew:
+
+```sh
+brew cask install shiftit
+```
+
+Then use Spotlight to start ShiftIt. It will likely inform you that it needs some permissions to control your machine.
+
+---
+
+# Giving ShiftIt Permissions
+
+ShiftIt needs permission to control your computer. Let's give it that permission.
+
+1. Use Spotlight to open your `Security & Privacy` preferences.
+1. Select the `Privacy` tab.
+1. In the left sidebar choose `Accessibility`.
+1. Click the lock in the lower left corner to make changes and enter your password.
+1. In the right-hand pane titled `Allow the apps below to control your computer.` check the box next to `ShiftIt`
+1. Quit your `Security & Privacy` preferences.
+1. Start ShiftIt again using Spotlight.
+
+---
+
+# Use ShiftIt
+
+By default you can use ShiftIt by holding down Control, Option and Command at the same time and then pressing:
+
+- Left arrow to move the current window the left half of your screen.
+- Right arrow to move the current window the right half of your screen.
+- `M` to maximize the current window.
+- `C` to center the current window.
+- `F` to full screen the current application.
+
+---
+
+# Learn & Use Git
+
+[Git](https://git-scm.com) is arguably the preferred [Version Control](https://en.wikipedia.org/wiki/Version_control) system used by developers today.
+
+Teaching Git is outside the scope of this presentation but I suggest the following free Git courses:
+
+- [Try Git](https://try.github.io/)
+- [Learn Git](https://www.codecademy.com/learn/learn-git)
+- [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
+---
+
+# Install Git
+
+Git is provided by OS X/macOS these days but lets make sure we have the latest version installed using Homebrew:
+
+```bash
+brew install git
+```
+
+Once it's done check the version of Git installed:
+
+```bash
+$ git --version
+git version 2.11.0
+```
+
+---
+
+# Why no cask this time?
+
+---
+
+## Bash Shell
+
+---
+
+# Stop typing commands over and over
+
+## Use shell command history
+
+---
+
+# Stop typing commands over and over
+
+## Use shell command search
+
+---
+
+# Install bash-it
+
+---
+
+# Use Homebrew to Install Stuff
+
+---
+
+# Use Version Managers for Programming Languages
+
+---
+
+# Use Dependency Management Tools
+
+---
+
+# Take Notes
+
+---
+
+# Use Shortcut Keys
+
+---
+
+# Use Time Boxing
+
+---
+
+# Use Google Chrome Profiles
+
+---
+
+## Resources
+
+- [The Productive Programmer](http://nealford.com/books/productiveprogrammer)
+- <https://xkcd.com/1319/>
+- <https://xkcd.com/1205/>
+- <http://i.imgur.com/Q8kV8.png>
+- <https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect>
+
+
