@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Patua One', cursive;
+  font-family: 'Patua One', serif;
 }
 
 h1 {
@@ -57,7 +57,7 @@ dt .fa:before {
 }
 
 dt {
-  font-family: 'Patua One', cursive;
+  font-family: 'Patua One', serif;
   font-size: 1.2rem;
   padding-left: 1.9rem;
   text-indent: -1.9rem;
@@ -112,6 +112,12 @@ a:hover {
   margin-bottom: 0.8em;
 }
 
+body > code, li > code, p > code {
+  background: #ddd;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
 <%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %>
 
 pre {
@@ -124,3 +130,4 @@ pre {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
