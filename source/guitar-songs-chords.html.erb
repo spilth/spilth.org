@@ -13,7 +13,8 @@ title: Guitar Songs & Chords
     <tr>
       <th>Title</th>
       <th>Artist</th>
-      <th>Chords</th>
+      <th>Play</th>
+      <th>Sing</th>
       <th>Listen</th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@ title: Guitar Songs & Chords
       <td><%= song.title %></td>
       <td><%= song.artist %></td>
       <td><%= link_to "Chords", song.chords %></td>
+      <td><%= link_to "Lyrics", song.lyrics %></td>
       <td>
         <%= link_to '<i class="fa fa-youtube-play" aria-hidden="true"></i>', song.youtube %>
         <%= link_to '<i class="fa fa-spotify" aria-hidden="true"></i>', song.spotify %>
