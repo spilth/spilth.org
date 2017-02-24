@@ -1,4 +1,9 @@
 -
+  title: Guitar Songs & Chords
+  description: A collection of songs and chords for guitar meet up groups.
+  url: /guitar-songs-chords/
+  icon: fa-music
+-
   title: Productive Mac Development for New Developers
   description: Some tips, techniques and tools for being a more productive developer on a Mac.
   url: /blog/2017/02/06/productive-mac-development
