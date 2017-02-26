@@ -14,9 +14,9 @@ title: Guitar Songs & Chords
       <th>Title</th>
       <th>Artist</th>
       <th>Play</th>
-      <th>Capo</th>
       <th>Sing</th>
       <th>Listen</th>
+      <th>Capo</th>
     </tr>
   </thead>
   <% data.guitar_songs.sort_by(&:title).each do |song| %>
@@ -24,12 +24,12 @@ title: Guitar Songs & Chords
       <td><%= song.title %></td>
       <td><%= song.artist %></td>
       <td><%= link_to "Chords", song.chords %></td>
-      <td><%= song.capo %></td>
       <td><%= link_to "Lyrics", song.lyrics %></td>
       <td>
         <%= link_to '<i class="fa fa-youtube-play" aria-hidden="true"></i>', song.youtube %>
         <%= link_to '<i class="fa fa-spotify" aria-hidden="true"></i>', song.spotify %>
       </td>
+      <td><%= song.capo %></td>
     </tr>
   <% end %>
 </table>
