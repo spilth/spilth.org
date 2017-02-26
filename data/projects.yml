@@ -1,4 +1,9 @@
 -
+  title: Guitar Chord Chart PDF
+  description: A PDF chart of basic/common guitar chords.
+  url: /files/guitar-chords.pdf
+  icon: fa-music
+-
   title: Guitar Songs & Chords
   description: A collection of songs and chords for guitar meet up groups.
   url: /guitar-songs-chords/
