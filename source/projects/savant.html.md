@@ -91,7 +91,7 @@ $ savant init
 You can specify your group and artifact IDs with the `--groupId` and `--artifactId` command-line options, also available as `-g` and `-a`:
 
 ```bash
-$ savant init --groupId spilth.org -artifactId foo
+$ savant init --groupId spilth.org --artifactId foo
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
