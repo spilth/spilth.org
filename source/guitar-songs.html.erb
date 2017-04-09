@@ -1,0 +1,34 @@
+---
+title: Guitar Songs
+---
+
+<p>This is a collection of songs for guitar meet ups to learn and play. They all use <a href="https://www.youtube.com/watch?v=jJxRjWtwmEE">standard tuning</a> (E A D G B E). Playlists of these songs are available on <a href="https://www.youtube.com/playlist?list=PL0qpO5Cy9JamE_h3OEeNWm01ZfYyZFoyq">YouTube</a> and <a href="https://open.spotify.com/user/spilth/playlist/1NaTfvTr9vGRuLPFZ5vPPz">Spotify</a> but please note that you'll need <a href="https://www.amazon.com/Guitar-Capos/b?ie=UTF8&node=486413011">a capo</a> to play along with some of these versions. During the meetups we'll play without a capo since not everybody owns one.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Year</th>
+      <th>Play</th>
+      <th>Sing</th>
+      <th>Listen</th>
+      <th>Capo</th>
+    </tr>
+  </thead>
+  <% data.guitar_songs.sort_by(&:title).each do |song| %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= song.artist %></td>
+      <td><%= song.year %></td>
+      <td><%= link_to "Play", song.chords %></td>
+      <td><%= link_to "Sing", song.lyrics %></td>
+      <td>
+        <%= link_to '<i class="fa fa-youtube-play" aria-hidden="true"></i>', song.youtube %>
+        <%= link_to '<i class="fa fa-spotify" aria-hidden="true"></i>', song.spotify %>
+      </td>
+      <td><%= song.capo %></td>
+    </tr>
+  <% end %>
+</table>
+

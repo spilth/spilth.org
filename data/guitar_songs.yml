@@ -4,141 +4,164 @@
   spotify: https://play.spotify.com/track/2vLGMSMrBcOpJcveRvp0j6
   chords: https://tabs.ultimate-guitar.com/f/foo_fighters/times_like_these_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/foofighters/timeslikethese.html
+  year: 2002
 - title: Brown Eyed Girl
   artist: Van Morrison
   youtube: https://www.youtube.com/watch?v=UfmkgQRmmeE
   spotify: https://play.spotify.com/track/3yrSvpt2l1xhsV9Em88Pul
   chords: https://tabs.ultimate-guitar.com/v/van_morrison/brown_eyed_girl_ver3_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/vanmorrison/browneyedgirl.html
+  year: 1967
 - title: Wonderwall
   artist: Oasis
   youtube: https://www.youtube.com/watch?v=6hzrDeceEKc
   spotify: https://play.spotify.com/track/5wj4E6IsrVtn8IBJQOd0Cl
   chords: https://tabs.ultimate-guitar.com/o/oasis/wonderwall_ver7_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/oasis/wonderwall.html
-  capo: 2nd Fret
+  capo: 2nd
+  year: 1995
 - title: Heart of Gold
   artist: Neil Young
   youtube: https://www.youtube.com/watch?v=X3IA6pIVank
   spotify: https://play.spotify.com/track/1Q1b8eVkUPGlpSArl8JAVw
   chords: https://tabs.ultimate-guitar.com/n/neil_young/heart_of_gold_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/neilyoung/heartofgold.html
+  year: 1972
 - title: Free Fallin'
   artist: Tom Petty
   youtube: https://www.youtube.com/watch?v=1lWJXDG2i0A
   spotify: https://play.spotify.com/track/5tVA6TkbaAH9QMITTQRrNv
   chords: https://tabs.ultimate-guitar.com/t/tom_petty/free_fallin_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/tompettyandtheheartbreakers/freefallin.html
-  capo: 3rd Fret
+  capo: 3rd
+  year: 1989
 - title: Run-Around
   artist: Blues Traveler
   youtube: https://www.youtube.com/watch?v=ousaiByU1ko
   spotify: https://open.spotify.com/track/3y8rEUEUdmAcPCpPoLotnO
   chords: https://tabs.ultimate-guitar.com/b/blues_traveler/run_around_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/bluestraveler/runaround.html
+  year: 1994
 - title: Closing Time
   artist: Semisonic
   youtube: https://www.youtube.com/watch?v=xGytDsqkQY8
   spotify: https://open.spotify.com/track/087OBLtoeS3Q6j0k6tMNAI
   chords: https://tabs.ultimate-guitar.com/s/semisonic/closing_time_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/semisonic/closingtime.html
+  year: 1998
 - title: Island in the Sun
   artist: Weezer
   youtube: https://www.youtube.com/watch?v=erG5rgNYSdk
   spotify: https://open.spotify.com/track/3Pnhzf3Knhdsavx0VM2ZmG
   chords: https://tabs.ultimate-guitar.com/w/weezer/island_in_the_sun_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/weezer/islandinthesun.html
+  year: 2001
 - title: Will You Still Love Me Tomorrow
   artist: The Shirelles
   youtube: https://www.youtube.com/watch?v=cbxxkwBQk_o
   spotify: https://open.spotify.com/track/3DkdQdfSF9OEsloB5GY2Wa
   chords: https://tabs.ultimate-guitar.com/t/the_shirelles/will_you_still_love_me_tomorrow_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/caroleking/willyoulovemetomorrow.html
+  year: 1961
 - title: House of the Rising Sun
   artist: The Animals
   youtube: https://www.youtube.com/watch?v=5A-4VGfx5lU
   spotify: https://open.spotify.com/track/7BY005dacJkbO6EPiOh2wb
   chords: https://tabs.ultimate-guitar.com/t/the_animals/house_of_the_rising_sun_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/animals/houseoftherisingsun.html
+  year: 1964
 - title: I Can See Clearly Now
   artist: Johnny Nash
   youtube: https://www.youtube.com/watch?v=FscIgtDJFXg
   spotify: https://open.spotify.com/track/30SCXVFyQGOFMdKnbgJS18
   chords: https://tabs.ultimate-guitar.com/j/jimmy_cliff/i_can_see_clearly_now_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/jimmycliff/icanseeclearlynow.html
+  year: 1972
 - title: Hard Days Night
   artist: The Beatles
   youtube: https://www.youtube.com/watch?v=fG2evigIJIc
   spotify: https://open.spotify.com/track/5J2CHimS7dWYMImCHkEFaJ
   chords: https://tabs.ultimate-guitar.com/t/the_beatles/a_hard_days_night_ver6_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/beatles/aharddaysnight.html
+  year: 1964
 - title: Hotel California
   artist: Eagles
   youtube: https://www.youtube.com/watch?v=jFi2ZM_7FnM
   spotify: https://open.spotify.com/track/40riOy7x9W7GXjyGp4pjAv
   chords: https://tabs.ultimate-guitar.com/e/eagles/hotel_california_ver6_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/eagles/hotelcalifornia.html
+  year: 1976
 - title: Knockin' on Heaven's Door
   artist: Bob Dylan
   youtube: https://www.youtube.com/watch?v=rnKbImRPhTE
   spotify: https://open.spotify.com/track/7gksXTblFUMjjkU54iS3Ir
   chords: https://tabs.ultimate-guitar.com/e/eric_clapton/knocking_on_heavens_door_crd.htm
   lyrics: http://bobdylan.com/songs/knockin-heavens-door/
+  year: 1965
 - title: Can't Help Falling In Love
   artist: Elvis Presley
   youtube: https://www.youtube.com/watch?v=vGJTaP6anOU
   spotify: https://open.spotify.com/track/44AyOl4qVkzS48vBsbNXaC
   chords: https://tabs.ultimate-guitar.com/e/elvis_presley/cant_help_falling_in_love_with_you_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/elvispresley/canthelpfallinginlove.html
-  capo: 2nd Fret
+  capo: 2nd
+  year: 1961
 - title: All I Have To Do Is Dream
   artist: The Everly Brothers
   youtube: https://www.youtube.com/watch?v=tbU3zdAgiX8
   spotify: https://open.spotify.com/track/7dblNGnRXEBrVJunazs2U5
   chords: https://tabs.ultimate-guitar.com/t/the_everly_brothers/all_i_have_to_do_is_dream_ver10_crd.htm#
   lyrics: http://www.azlyrics.com/lyrics/everlybrothers/allihavetodoisdream.html
-  capo: 3rd Fret
+  capo: 3rd
+  year: 1958
 - title: Runaway Train
   artist: Soul Asylum
   youtube: https://www.youtube.com/watch?v=NRtvqT_wMeY
   spotify: https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP
   chords: https://tabs.ultimate-guitar.com/s/soul_asylum/runaway_train_ver4_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/soulasylum/runawaytrain.html
+  year: 1992
 - title: Hallelujah
   artist: Jeff Buckley
   youtube: https://www.youtube.com/watch?v=y8AWFf7EAc4
   spotify: https://open.spotify.com/track/74X1epeRufHckhuX1KFD04
   chords: https://tabs.ultimate-guitar.com/j/jeff_buckley/hallelujah_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/jeffbuckley/hallelujah.html
+  year: 1993
 - title: Million Reasons
   artist: Lady Gaga
   youtube: https://www.youtube.com/watch?v=en2D_5TzXCA
   spotify: https://open.spotify.com/track/7dZ1Odmx9jWIweQSatnRqo
   chords: https://tabs.ultimate-guitar.com/l/lady_gaga/million_reasons_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/ladygaga/millionreasons.html
+  year: 2016
 - title: Me and Bobby McGee
   artist: Janis Joplin
   youtube: https://www.youtube.com/watch?v=WXV_QjenbDw
   spotify: https://open.spotify.com/track/1IqFh00G2kvvMm8pRMpehA
   chords: https://tabs.ultimate-guitar.com/j/janis_joplin/me_and_bobby_mcgee_ver3_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/janisjoplin/mebobbymcgee.html
+  year: 1969
 - title: While My Guitar Gently Weeps
   artist: The Beatles
   youtube: https://www.youtube.com/watch?v=6SFNW5F8K9Y
   spotify: https://open.spotify.com/track/389QX9Q1eUOEZ19vtzzI9O
   chords: https://tabs.ultimate-guitar.com/t/the_beatles/while_my_guitar_gently_weeps_ver5_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/beatles/whilemyguitargentlyweeps.html
+  year: 1968
 - title: Mrs. Robinson
   artist: Simon & Garfunkle
   youtube: https://www.youtube.com/watch?v=9C1BCAgu2I8
   spotify: https://open.spotify.com/track/0iOZM63lendWRTTeKhZBSC
   chords: https://tabs.ultimate-guitar.com/s/simon_garfunkel/mrs_robinson_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/simongarfunkel/mrsrobinson.html
-  capo: 2nd Fret
+  capo: 2nd
+  year: 1968
 - title: Love Me Tender
   artist: Elvis Presley
   youtube: https://www.youtube.com/watch?v=093GjYcDg-4
   spotify: https://open.spotify.com/track/0aDmZSsj0OqOcscNlsASlm
   chords: https://tabs.ultimate-guitar.com/e/elvis_presley/love_me_tender_ver2_crd.htm
   lyrics: http://www.azlyrics.com/lyrics/elvispresley/lovemetender.html
+  year: 1956
 

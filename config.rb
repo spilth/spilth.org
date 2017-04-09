@@ -1,3 +1,5 @@
+redirect "guitar-songs-chords/index.html", to: "/guitar-songs/"
+
 activate :directory_indexes
 
 activate :syntax
@@ -19,4 +21,5 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 page "presentations/*", :layout => :presentation
+
 

@@ -4,9 +4,9 @@
   url: /files/guitar-chords.pdf
   icon: fa-music
 -
-  title: Guitar Songs & Chords
-  description: A collection of songs and chords for guitar meet up groups.
-  url: /guitar-songs-chords/
+  title: Guitar Songs
+  description: A collection of songs for guitar meet ups.
+  url: /guitar-songs/
   icon: fa-music
 -
   title: Productive Mac Development for New Developers
