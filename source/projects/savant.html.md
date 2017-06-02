@@ -86,12 +86,14 @@ $ savant init
 [INFO] ------------------------------------------------------------------------
 ```
 
-#### Specify Group and Artifact IDs
+#### Additional Initialization Options
 
-You can specify your group and artifact IDs with the `--groupId` and `--artifactId` command-line options, also available as `-g` and `-a`:
+You can specify your Group and Artifact IDs with the `--groupId` and `--artifactId` command-line options, also available as `-g` and `-a`.
+
+You can also specify using a minimal Java 8 archetype using the `--minimal` command-line option, also available as `-m`.
 
 ```bash
-$ savant init --groupId spilth.org --artifactId foo
+$ savant init --groupId spilth.org --artifactId foo --minimal
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
@@ -127,4 +129,5 @@ $ savant init --groupId spilth.org --artifactId foo
 
 - [savant Source](https://github.com/spilth/savant)
 - [java8-junit4-quickstart Archetype Source](https://github.com/spilth/java8-junit4-quickstart)
+- [java8-minimal-quickstart Archetype Source](https://github.com/spilth/java8-minimal-quickstart)
 
