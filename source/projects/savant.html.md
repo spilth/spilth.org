@@ -4,8 +4,9 @@ title: savant
 
 savant is a command-line tool that attempts to make easier to:
 
-- search Maven Central for Maven and Gradle dependencies
 - initialize modern Java Maven projects
+- search Maven Central for Maven and Gradle dependencies
+- add the JavaDocs for your Maven project dependencies to [Dash](https://kapeli.com/dash)
 
 ## Installation
 
@@ -18,40 +19,9 @@ $ brew install savant
 
 ## Usage
 
-### Search Maven Central
+### Initialize a Maven Project
 
-To search Maven Central for Maven dependency coordinates:
-
-```bash
-$ savant search hamcrest-core
-<dependency>
-    <groupId>org.hamcrest</groupId>
-    <artifactId>hamcrest-core</artifactId>
-    <version>1.3</version>
-</dependency>
-<dependency>
-    <groupId>org.ops4j.pax.tipi</groupId>
-    <artifactId>org.ops4j.pax.tipi.hamcrest.core</artifactId>
-    <version>1.3.0.1</version>
-</dependency>
-```
-
-#### Gradle Coordinates
-
-To get Gradle coordinates instead, pass `--format gradle` to the search command:
-
-```bash
-$ savant search cucumber-junit --format gradle
-compile group: 'com.github.mkolisnyk', name: 'aerial-maven-cucumber-junit-archetype', version: '0.0.6.1'
-compile group: 'com.github.mkolisnyk', name: 'aerial-cucumber-junit-archetype', version: '0.0.6.1'
-compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
-```
-
-### Initialize Maven Project
-
-You can also use Savant to quickly initialize a new Maven project.
-
-#### With Defaults
+To quickly initialize a new Maven project use the `init` command:
 
 ```bash
 $ savant init
@@ -93,7 +63,7 @@ You can specify your Group and Artifact IDs with the `--groupId` and `--artifact
 You can also specify using a minimal Java 8 archetype using the `--minimal` command-line option, also available as `-m`.
 
 ```bash
-$ savant init --groupId spilth.org --artifactId foo --minimal
+$ savant init -g spilth.org -a foo -m
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
@@ -125,9 +95,62 @@ $ savant init --groupId spilth.org --artifactId foo --minimal
 [INFO] ------------------------------------------------------------------------
 ```
 
+### Search Maven Central
+
+To search Maven Central for Maven dependency coordinates use the `search` command followed by the artifact you're looking for:
+
+```bash
+$ savant search hamcrest-core
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>1.3</version>
+</dependency>
+<dependency>
+    <groupId>org.ops4j.pax.tipi</groupId>
+    <artifactId>org.ops4j.pax.tipi.hamcrest.core</artifactId>
+    <version>1.3.0.1</version>
+</dependency>
+```
+
+#### Gradle Coordinates
+
+To get Gradle coordinates instead, pass `--format gradle` to the search command:
+
+```bash
+$ savant search cucumber-junit --format gradle
+compile group: 'com.github.mkolisnyk', name: 'aerial-maven-cucumber-junit-archetype', version: '0.0.6.1'
+compile group: 'com.github.mkolisnyk', name: 'aerial-cucumber-junit-archetype', version: '0.0.6.1'
+compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+```
+
+### Add Project Dependency JavaDocs to Dash
+
+You can add the JavaDocs for your Maven project's dependencies to [Dash](https://kapeli.com/dash) using the `dash` command:
+
+```bash
+$ savant dash
+Requesting docs for org.apache.httpcomponents:httpcore:4.4.5
+Requesting docs for org.apache.httpcomponents:httpclient:4.5.2
+Requesting docs for com.fasterxml.jackson.core:jackson-databind:2.5.3
+Requesting docs for com.beust:jcommander:1.58
+Requesting docs for org.apache.maven:maven-model:3.5.0
+```
+
+By default the command looks for a `pom.xml` in the current direction. To point to a POM file elsewhere or one with a different name use the `--pom` or `-p` option.
+
+```bash
+$ savant dash -p ~/Dropbox/Projects/setlib/pom.xml
+Requesting docs for org.hamcrest:hamcrest-all:1.1
+Requesting docs for junit:junit:4.8.2
+Requesting docs for org.slf4j:slf4j-simple:1.6.1
+Requesting docs for org.slf4j:slf4j-api:1.6.1
+```
+
 ## Resources
 
 - [savant Source](https://github.com/spilth/savant)
 - [java8-junit4-quickstart Archetype Source](https://github.com/spilth/java8-junit4-quickstart)
 - [java8-minimal-quickstart Archetype Source](https://github.com/spilth/java8-minimal-quickstart)
+- [Dash](https://kapeli.com/dash) - an API Documentation Browser and Code Snippet Manager
 
