@@ -1,3 +1,8 @@
+- 
+  title: Preventing Email Address Leaking with Devise
+  description: Keep your Devise powered Ruby on Rails application from letting others know when a user is registered on your site.
+  url: /blog/2017/08/31/preventing-email-address-leaking-with-devise
+  icon: fa-newspaper-o
 -
   title: Guitar Chord Chart PDF
   description: A PDF chart of basic/common guitar chords.
