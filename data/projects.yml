@@ -1,4 +1,9 @@
-- 
+-
+  title: PHP Development on macOS
+  description: A quick dive into getting PHP development set up on macOS
+  url: /blog/2017/10/01/php-development-on-macos
+  icon: fa-newspaper-o
+-
   title: Preventing Email Address Leaking with Devise
   description: Keep your Devise powered Ruby on Rails application from letting others know when a user is registered on your site.
   url: /blog/2017/08/31/preventing-email-address-leaking-with-devise
