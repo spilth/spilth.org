@@ -6,6 +6,8 @@ If you're new to the world of software development you are probably focused on l
 
 Fortunately there are a number of shortcuts, tools and techniques on the Mac that you can use to improve your productivity.
 
+READMORE
+
 ## Navigating Applications
 
 ### Start Applications Quickly

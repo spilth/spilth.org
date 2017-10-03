@@ -6,6 +6,8 @@ When using [Devise](https://github.com/plataformatec/devise) in a Ruby on Rails 
 
 This means somebody could try to sign up with your email address to see if you have an account on the site. If the web site is about a sensitive subject then your users may not want other people poking around to see if they have an account on it.
 
+READMORE
+
 In order to prevent Devise from divulging this information we need to do a few things:
 
 1. Enable Devise's `confirmable` functionality

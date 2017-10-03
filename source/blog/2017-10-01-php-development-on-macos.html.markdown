@@ -6,6 +6,8 @@ I long time ago I did PHP development. Then I discovered Ruby on Rails and never
 
 There are still a lot of jobs out there for PHP developers and I became curious as to how much PHP has "matured" in the last several years.
 
+READMORE
+
 Some of the things I like about Rails development are:
 
 1. How easy Ruby is to install

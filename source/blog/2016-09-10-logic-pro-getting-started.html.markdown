@@ -4,6 +4,8 @@ title: Getting Started with Logic Pro X
 
 Here are the things I do when I'm setting up a new machine with Logic Pro X.
 
+READMORE
+
 ## Download All the Sounds
 
 From the `Logic Pro X` menu select `Sound Library`, then `Download All Available Sounds`

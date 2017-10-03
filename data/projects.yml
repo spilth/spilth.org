@@ -1,14 +1,4 @@
 -
-  title: PHP Development on macOS
-  description: A quick dive into getting PHP development set up on macOS
-  url: /blog/2017/10/01/php-development-on-macos
-  icon: fa-newspaper-o
--
-  title: Preventing Email Address Leaking with Devise
-  description: Keep your Devise powered Ruby on Rails application from letting others know when a user is registered on your site.
-  url: /blog/2017/08/31/preventing-email-address-leaking-with-devise
-  icon: fa-newspaper-o
--
   title: Guitar Chord Chart PDF
   description: A PDF chart of basic/common guitar chords.
   url: /files/guitar-chords.pdf
@@ -19,30 +9,10 @@
   url: /guitar-songs/
   icon: fa-music
 -
-  title: Productive Mac Development for New Developers
-  description: Some tips, techniques and tools for being a more productive developer on a Mac.
-  url: /blog/2017/02/06/productive-mac-development
-  icon: fa-newspaper-o
--
-  title: Java Development on macOS
-  description: A blog post describing how to install Java and associated development tools.
-  url: /blog/2016/12/31/java-development-macos
-  icon: fa-newspaper-o
--
-  title: Using Maven to Build a Web Site for Your Java Project
-  description: A blog post describing how to easily build web sites for Maven projects.
-  url: /blog/2016/12/23/building-maven-project-sites
-  icon: fa-newspaper-o
--
   title: savant
   description: Command-line tool for searching for Java dependencies in Maven Central.
   url: projects/savant
   icon: fa-terminal
--
-  title: Getting Started with Logic Pro X
-  description: A blog post describing my setup process for Logic Pro X on a new machine.
-  url: /blog/2016/09/10/logic-pro-getting-started/
-  icon: fa-newspaper-o
 -
   title: Action Game Track
   description: A loopable piece of game music done in the style of Contra. Good for an action game.
@@ -63,16 +33,6 @@
   description: A set of questions to help generate closeness between two people.
   url: http://36questions.life/
   icon: fa-heart
--
-  icon: fa-newspaper-o
-  url: /blog/2016/03/21/logic-pro-collaboration-tips/
-  title: Logic Pro X Collaboration Tips and Techniques
-  description: A collection of useful tips and techniques for collaborating with others using Logic Pro X.
--
-  icon: fa-newspaper-o
-  url: /blog/2016/03/06/song-a-month-new-reflection-only-a-dream/
-  title: Reflection a Month - Only A Dream
-  description: Some background and thoughts on my first song-a-month song, Only A Dream
 -
   icon: fa-music
   url: https://soundcloud.com/spilth/carnival-of-sorts-rem-cover-by-oliver-switzer-brian-kelly

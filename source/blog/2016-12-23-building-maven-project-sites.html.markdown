@@ -6,6 +6,8 @@ When creating a library for other developers to use it's a huge help to provide 
 
 Building a site from scratch can take time and energy you don't have, but if you're using Maven that time and energy can be minimized by using the built-in `site` lifecycle.
 
+READMORE
+
 In this tutorial we will:
 
 - use the `site` lifecycle to build a web site for a Java project

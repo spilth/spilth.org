@@ -6,6 +6,8 @@ Back in the day I used to be a Windows guy, but when Vista came out I decided to
 
 With the ability to run Windows and Linux on a Mac (either via VirtualBox or Boot Camp), I find I can do all I need on a Mac.  This includes Java development which I would argue is *much* easier to install and manage on macOS than on a Windows box.
 
+READMORE
+
 Here are some of the tools I use for Java development on the Mac.
 
 ## Package Management
