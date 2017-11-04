@@ -2,11 +2,11 @@
 title: savant
 ---
 
-savant is a command-line tool that attempts to make easier to:
+savant is a command-line tool that makes easier to:
 
-- initialize modern Java Maven projects
-- search Maven Central for Maven and Gradle dependencies
-- add the JavaDocs for your Maven project dependencies to [Dash](https://kapeli.com/dash)
+- Initialize modern Java & Kotlin Maven projects
+- Search Maven Central for Maven and Gradle dependencies
+- Add the JavaDocs for your Maven project dependencies to [Dash](https://kapeli.com/dash)
 
 ## Installation
 
@@ -56,9 +56,58 @@ $ savant init
 [INFO] ------------------------------------------------------------------------
 ```
 
-#### Additional Initialization Options
+#### Languages
 
-You can specify your Group and Artifact IDs with the `--groupId` and `--artifactId` command-line options, also available as `-g` and `-a`.
+Savant can create `java` (default) or `kotlin` projects.
+
+You can specify the Language with the `--language` command-line option, also available as `-l`,
+
+```bash
+$ savant init -l kotlin
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:3.0.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:3.0.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- maven-archetype-plugin:3.0.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] Archetype repository not defined. Using the one from [org.jetbrains.kotlin:kotlin-archetype-jvm:1.1.51] found in catalog remote
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: kotlin-archetype-jvm:1.1.51
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: artifactId, Value: exampleArtifact
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: packageInPathFormat, Value: com/example
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: kotlinVersion, Value: 1.1.51
+[INFO] Parameter: artifactId, Value: exampleArtifact
+[INFO] Project created from Archetype in dir: /Users/brian/temp/exampleArtifact
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.688 s
+[INFO] Finished at: 2017-11-04T15:54:38-04:00
+[INFO] Final Memory: 15M/109M
+[INFO] ------------------------------------------------------------------------
+```
+
+#### Group and Artifact IDs
+
+By default Savant uses the Group ID `com.example` and the Artifact ID `exampleArtifact`
+
+You can specify your own Group and Artifact IDs with the `--groupId` and `--artifactId` command-line options, also available as `-g` and `-a`.
+
+#### Minimal Java Project
 
 You can also specify using a minimal Java 8 archetype using the `--minimal` command-line option, also available as `-m`.
 
@@ -137,7 +186,7 @@ Requesting docs for com.beust:jcommander:1.58
 Requesting docs for org.apache.maven:maven-model:3.5.0
 ```
 
-By default the command looks for a `pom.xml` in the current direction. To point to a POM file elsewhere or one with a different name use the `--pom` or `-p` option.
+By default the command looks for a `pom.xml` in the current directory. To point to a POM file elsewhere or one with a different name use the `--pom` or `-p` option.
 
 ```bash
 $ savant dash -p ~/Dropbox/Projects/setlib/pom.xml
