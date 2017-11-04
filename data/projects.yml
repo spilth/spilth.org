@@ -16,8 +16,8 @@
 -
   title: savant
   description: Command-line tool for searching for Java dependencies in Maven Central.
-  url: projects/savant
-  icon: fa-terminal
+  url: /projects/savant
+  icon: fa-code
 -
   title: Action Game Track
   description: A loopable piece of game music done in the style of Contra. Good for an action game.
