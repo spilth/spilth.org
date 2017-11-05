@@ -11,7 +11,7 @@
 -
   title: Guitar Songs
   description: A collection of songs for guitar meet ups.
-  url: /guitar-songs/
+  url: /projects/guitar-songs/
   icon: fa-music
 -
   title: savant
@@ -32,17 +32,17 @@
   title: Songmuse
   description: A growing set of tools to help inspire songwriting.
   url: https://songmuse.herokuapp.com
-  icon: fa-magic
+  icon: fa-music
 -
   title: 36 Questions
   description: A set of questions to help generate closeness between two people.
   url: http://36questions.life/
-  icon: fa-heart
+  icon: fa-globe
 -
-  icon: fa-music
   url: https://soundcloud.com/spilth/carnival-of-sorts-rem-cover-by-oliver-switzer-brian-kelly
   title: Carnival of Sorts (Cover)
   description: A cover of an old R.E.M. song, done with Oliver Switzer
+  icon: fa-music
 -
   icon: fa-music
   url: https://spilth.bandcamp.com/track/cool-with-it
@@ -89,17 +89,17 @@
   title: Spring Boot for Rails Developers
   description: A presentation showin Rails developers how to accomplish the same things with Spring Boot.
 -
-  icon: fa-diamond
+  icon: fa-code
   url: https://github.com/spilth/little_bits
   title: littleBits Ruby Gem
   description: A Ruby Gem for controlling the littleBits cloudBit and Arduino Module.
 -
-  icon: fa-gears
+  icon: fa-music
   url: http://littlebits.cc/projects/easyjam-2
   title: EasyJam 2
   description: A littleBits project that lets you play music with a slider by mapping it to one of five different scales.
 -
-  icon: fa-diamond
+  icon: fa-code
   url: https://github.com/spilth/l8
   title: l8 Ruby Gem
   description: A Ruby gem for controlling a single or group of l8 Smartlights.
@@ -109,7 +109,7 @@
   title: Astrosmash Phaser Clone
   description: A simple clone of Astrosmash using PhaserJS.
 -
-  icon: fa-diamond
+  icon: fa-code
   url: https://github.com/spilth/ubyray
   title: ubyray Ruby Gem
   description: A Ruby gem for translating english words to Piglatin.
@@ -149,7 +149,7 @@
   title: Pragmatic Guide to Maven
   description: My attempt a writing a book in the style of the Pragmatic Guides for Maven during PragProWriMo.
 -
-  icon: fa-database
+  icon: fa-globe
   url: http://dracosaur.us
   title: D &amp; D Miniatures Database
   description: A Rails app for tracking your collect of D &amp; D miniatures.
@@ -173,8 +173,3 @@
   url: https://thelaundryroom.bandcamp.com/album/5-song-e-p
   title: The Laundry Room - 5 Song E.P.
   description: My college band's 5 song CD. That's a compact disc for you young ones.
--
-  icon: fa-file-text-o
-  url: http://resume.spilth.org
-  title: My Resume
-  description: If you've made it this far and you're interested in hiring me.

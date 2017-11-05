@@ -2,10 +2,13 @@
 title: Projects
 ---
 
-<p class="lead">Here are a bunch of things I've made.</p>
+<p class="lead">Here are a bunch of things I've made or helped make.</p>
 
 <% data.projects.each do |project| %>
-  <h2><a href="<%= project.url %>"><%= project.title %></a></h2>
+  <h2>
+    <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
+    <a href="<%= project.url %>"><%= project.title %></a>
+  </h2>
 
   <p><%= project.description %></p>
 <% end %>

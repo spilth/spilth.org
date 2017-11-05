@@ -2,7 +2,7 @@
 title: Marble Mania 2003
 ---
 
-<div class='embed-container'>
+<div class='embed-responsive embed-responsive-16by9 mb-4'>
     <iframe src='https://player.vimeo.com/video/14423454' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
 
