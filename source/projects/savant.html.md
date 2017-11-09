@@ -67,7 +67,7 @@ Project created in directory hellojava
 
 #### Languages
 
-Savant can create `java` (Java 9, default), `java8` or `kotlin` projects.
+Savant can create `java` (Java 9), `java8` or `kotlin` projects.
 
 You specify the Language with the `--language` command-line option, also available as `-l`,
 
