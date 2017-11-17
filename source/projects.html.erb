@@ -4,7 +4,7 @@ title: Projects
 
 <p class="lead">Here are a bunch of things I've made or helped make.</p>
 
-<% data.projects.each do |project| %>
+<% data.projects.sort_by { |project| project.title.downcase }.each do |project| %>
   <h2>
     <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
     <a href="<%= project.url %>"><%= project.title %></a>
