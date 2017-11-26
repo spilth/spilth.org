@@ -2,14 +2,25 @@
 title: Projects
 ---
 
-<p class="lead">Here are a bunch of things I've made or helped make.</p>
-
-<div class="btn-group mb-4" role="group" aria-label="Basic example">
-  <% data.projects.collect { |project| project.icon }.uniq.sort.each do |icon| %>
-    <button type="button" class="btn btn-secondary filter" id="<%= icon %>"><i class="fa fa-2x fa-fw <%= icon %>" aria-hidden="true"></i></button>
-  <% end %>
-  <button type="button" class="btn btn-secondary" id="all"><i class="fa fa-2x fa-fw fa-undo" aria-hidden="true"></i></button>
+<div class="dropdown ml-2 mb-2 pull-right">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filter by...
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="all"><i class="fa fa-fw fa-times" aria-hidden="true"></i> Clear Filter</a>
+    <a class="dropdown-item filter" id="fa-book"><i class="fa fa-fw fa-book" aria-hidden="true"></i> Books</a>
+    <a class="dropdown-item filter" id="fa-code"><i class="fa fa-fw fa-code" aria-hidden="true"></i> Code</a>
+    <a class="dropdown-item filter" id="fa-gamepad"><i class="fa fa-fw fa-gamepad" aria-hidden="true"></i> Games</a>
+    <a class="dropdown-item filter" id="fa-map-o"><i class="fa fa-fw fa-map-o" aria-hidden="true"></i> Maps</a>
+    <a class="dropdown-item filter" id="fa-music"><i class="fa fa-fw fa-music" aria-hidden="true"></i> Music</a>
+    <a class="dropdown-item filter" id="fa-podcast"><i class="fa fa-fw fa-podcast" aria-hidden="true"></i> Podcast</a>
+    <a class="dropdown-item filter" id="fa-file-powerpoint-o"><i class="fa fa-fw fa-file-powerpoint-o" aria-hidden="true"></i> Presentations</a>
+    <a class="dropdown-item filter" id="fa-globe"><i class="fa fa-fw fa-globe" aria-hidden="true"></i> Web Sites</a>
+    <a class="dropdown-item filter" id="fa-youtube"><i class="fa fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a>
+  </div>
 </div>
+
+<p class="lead">Here are a bunch of things I've made or helped make.</p>
 
 <% data.projects.sort_by { |project| project.title.downcase }.each do |project| %>
   <div class="project icon-<%= project.icon %>">
