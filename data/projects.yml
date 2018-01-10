@@ -1,3 +1,11 @@
+- title: Navigate to Test
+  description: Visual Studio Code Extension to easy switch between implementation code and test code.
+  icon: fa-code
+  url: https://marketplace.visualstudio.com/items?itemName=spilth.navigate-to-test
+- title: Edit Latest Migration
+  description: RubyMine Plug-in to easy navigate to the most recent Ruby on Rails migration file.
+  icon: fa-code
+  url: https://plugins.jetbrains.com/plugin/10296-edit-latest-migration
 - title: Winter
   description: A song about how winter can intensify your longing for somebody.
   url: https://spilth.bandcamp.com/track/winter
@@ -146,4 +154,3 @@
   icon: fa-music
   url: https://thelaundryroom.bandcamp.com/album/5-song-e-p
   description: My college band's 5 song CD. That's a compact disc for you young ones.
-
