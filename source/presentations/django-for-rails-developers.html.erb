@@ -276,7 +276,7 @@ def post_index(request):
 
 ---
 
-# app/views/posts/index.html
+# app/views/posts/index.html.erb
 
 Create `blog/templates/blog/post_index.html`:
 
@@ -345,9 +345,9 @@ def post_index(request):
 
 ---
 
-# PostsController#show
+# /blog/posts/1
 
-Add URL Configuration:
+Add URL Configuration to `blog/urls.py`:
 
 ```python
 from django.conf.urls import url
@@ -363,7 +363,7 @@ urlpatterns = [
 
 ---
 
-# PostsController#show (cont.)
+# PostsController#show
 
 Add Show method:
 
@@ -376,9 +376,9 @@ def post_show(request, pk):
 
 ---
 
-# View
+# app/views/posts/show.html.erb
 
-Add Show Template:
+Add a template at `blog/templates/blog/posts_show.html`:
 
 ```html
 <html>
@@ -390,7 +390,7 @@ Add Show Template:
 </html>
 ```
 
-Add link in Index View:
+Add a link in `blog/templates/blog/post_index.html`:
 
 ```html
 <li><a href="{% url 'post_show' pk=post.pk %}">{{ post.title }}</a>
@@ -406,29 +406,11 @@ $ ./manage.py shell
 
 ---
 
-# rake
-
-???
-
----
-
-# Model.find
-
----
-
-# Mode.where().order().limit()
-
----
-
 # model.valid?
 
 ---
 
 # model.save
-
----
-
-# Model.findOne()
 
 ---
 
@@ -481,7 +463,6 @@ $ ./manage.py shell
 ---
 
 # Slim, Haml
-
 
 ---
 
