@@ -18,3 +18,5 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 page 'presentations/*', layout: :presentation
 
+page 'projects/guitar-songs/*', layout: :song
+
