@@ -1,0 +1,505 @@
+name: title
+class: middle, center
+
+# Django for Rails Developers
+
+Brian Kelly
+
+---
+
+# Things... 
+
+## I'm Assuming
+
+- You're on a Mac
+- You've built Ruby on Rails sites
+- You have a healthy and up to date [Homebrew](http://brew.sh/) installation
+  - `brew update && brew ugprade && brew cleanup && brew doctor`
+
+## I Won't Be Covering
+
+- Python Syntax
+- Why should I use Django over ______?
+
+---
+
+# rbenv
+
+Use [pyenv](https://github.com/pyenv/pyenv):
+
+```bash
+$ brew install pyenv
+$ eval "$(pyenv init -)"
+$ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+$ pyenv install 3.6.5
+$ pyenv global 3.6.5
+```
+
+---
+
+# gem install bundler
+
+Use [pipenv](https://docs.pipenv.org):
+
+```bash
+$ brew install pipenv
+```
+
+---
+
+# RubyMine
+
+Use [PyCharm](https://www.jetbrains.com/pycharm/):
+
+```bash
+$ brew cask install pycharm
+```
+
+---
+
+# gem install rails
+
+Use [pip](https://pypi.python.org/pypi/pip) to install [Django](https://www.djangoproject.com)
+
+```bash
+$ pip install Django
+```
+
+---
+
+# rails new spilth
+
+Use [django-admin](https://docs.djangoproject.com/en/2.0/ref/django-admin/)'s [startproject](https://docs.djangoproject.com/en/2.0/ref/django-admin/#startproject) command:
+
+```bash
+$ django-admin startproject spilth
+$ cd spilth
+```
+
+---
+
+# rails new spilth -D postgres
+
+`startproject` doesn't have any database flags.
+
+Change your `DATABASE` configuration in `spilth/settings.py`:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'spilth',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
+
+Add [psycopg](http://initd.org/psycopg/) as a dependency and create your database:
+
+```bash
+$ brew install postgresql
+$ brew services start postgresql
+$ pipenv install psycopg2
+$ pipenv install psycopg2-binary
+```
+
+---
+
+# rails db:setup
+
+You have to do this manually:
+
+```bash
+$ createdb spilth
+```
+
+---
+
+# rails server
+
+Use the `runserver` command:
+
+```bash
+$ ./manage.py runserver
+```
+
+Then visit <http://localhost:8000>
+
+---
+
+# rails generate scaffold
+
+Django doesn't have a scaffold generator but it has an [automatic admin site](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/).
+
+Migrate the database using the `migrate` command to run built-in admin, auth and session migrations.
+
+```bash
+$ ./manage.py migrate
+```
+
+Create an admin account useing the `createsuperuser` command:
+
+```bash
+$ ./manage.py createsuperuser
+```
+
+Then visit <http://localhost:8000/admin> and log in.
+
+---
+
+# rails generate scaffold (cont.)
+
+Use [startapp](https://docs.djangoproject.com/en/2.0/ref/django-admin/#startapp) command to create an app inside your project:
+
+```bash
+$ ./manage.py startapp blog
+```
+
+Add your new app to `INSTALLED_APPS` in `spilth/settings.py`:
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+]
+```
+
+---
+
+# rails g model Post
+
+Create a `Post` class in `blog/models.py` that extends [models.Model](https://docs.djangoproject.com/en/2.0/topics/db/models/):
+
+```python
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+```
+
+Generate and run migrations for the new `Post` model:
+
+```bash
+$ ./manage.py makemigrations blog
+$ ./manage.py migrate blog
+```
+
+Register the `Post` model with the admin site in `blog/admin.py`:
+
+```python
+from django.contrib import admin
+from .models import Post
+
+admin.site.register(Post)
+```
+
+Then visit <http://localhost:8000/admin>
+
+---
+
+# Post object (1)
+
+Provide a [\_\_str\_\_](https://docs.djangoproject.com/en/2.0/ref/models/instances/#django.db.models.Model.__str__) method for the `Post` class in `blog/models.py`:
+
+```python
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+    
+    def __str__(self):
+        return self.title
+```
+
+---
+
+# resources :posts
+
+Nope.
+
+Maybe [django-rest-framework](http://www.django-rest-framework.org) or [django-crudbuilder](https://django-crudbuilder.readthedocs.io/)?
+
+---
+
+# routes.rb
+
+Django uses [URL Configurations](https://docs.djangoproject.com/en/2.0/topics/http/urls/).
+
+Create `blog/urls.py` and add an index URL for Posts:
+
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('posts', views.post_index, name='post_index'),
+]
+```
+
+Register `blog`'s URLs in `spilth/urls.py`:
+
+```python
+from django.contrib import admin
+from django.urls import path
+from django.conf.urls import include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')),
+]
+```
+
+---
+
+# PostsController#index
+
+Edit `blog/views.py`:
+
+```python
+from django.shortcuts import render
+from blog.models import Post
+
+def post_index(request):
+    posts = Post.objects.all
+    return render(request, 'blog/post_index.html', {'posts': posts})
+```
+
+---
+
+# app/views/posts/index.html.erb
+
+Create `blog/templates/blog/post_index.html`:
+
+```html
+<html>
+	<body>
+	  <h1>Blog Post</h1>
+
+	  <ul>
+	  {% for post in posts %}
+	  <li>{{ post.title }}</li>
+	  {% endfor %}
+	  </ul>
+  </body>
+</html>
+```
+
+Then visit <http://localhost:8000/blog/posts>
+
+---
+
+# rails g migration Add...
+
+Add new fields to the model:
+
+```python
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+    published_at = models.DateField(null=True)
+
+    def __str__(self):
+        return self.title
+```
+
+Then generate and run migrations:
+
+```bash
+$ ./manage.py makemigrations blog
+$ ./manage.py migrate blog
+```
+---
+
+# rails db:rollback
+
+Migrate to the migration before the one you want to rollback:
+
+```bash
+$ ./manage.py migrate blog 0001_initial
+```
+
+---
+
+# Model.where(...).order_by(...)
+
+Use Django's [QuerySet API](https://docs.djangoproject.com/en/2.0/ref/models/querysets/)
+
+```python
+def post_index(request):
+  posts = Post.objects.exclude(published_at=null)
+      .order_by('-published_at')
+  return render(request, 'blog/post_index.html', {'posts': posts})
+```
+
+---
+
+# /blog/posts/1
+
+Add URL Configuration to `blog/urls.py`:
+
+```python
+from django.conf.urls import url
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('posts', views.post_index, name='post_index'),
+    url(r'^posts/(?P<pk>\d+)/$', views.post_show, name='post_show'),
+]
+```
+
+---
+
+# PostsController#show
+
+Add Show method:
+
+```python
+def post_show(request, pk):
+    post = Post.objects.get(pk=pk)
+
+    return render(request, 'blog/post_show.html', {'post': post})
+```
+
+---
+
+# app/views/posts/show.html.erb
+
+Add a template at `blog/templates/blog/posts_show.html`:
+
+```html
+<html>
+	<body>
+    <h1>{{ post.title }}</h1>
+        
+    <p>{{ post.body }}</p>
+  </body>
+</html>
+```
+
+Add a link in `blog/templates/blog/post_index.html`:
+
+```html
+<li><a href="{% url 'post_show' pk=post.pk %}">{{ post.title }}</a>
+```
+
+---
+
+# rails console
+
+```bash
+$ ./manage.py shell
+```
+
+---
+
+# model.valid?
+
+---
+
+# model.save
+
+---
+
+# Model.find_by(attribute: 'value')
+
+---
+
+# Model Hooks
+
+---
+
+# Model Validations
+
+---
+
+# has_many :comments
+
+---
+
+# Gemfile
+
+---
+
+# Rakefile
+
+---
+
+# Controller Filters
+
+---
+
+# Bootstrap
+
+---
+
+# Internationalization
+
+---
+
+# Devise
+
+---
+
+# Rest API
+
+---
+
+# binding.pry & web-console
+
+---
+
+# Slim, Haml
+
+---
+
+# Asset Pipeline
+
+---
+
+# .gitignore
+
+```text
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+```
+
+---
+
+# Deploy to Heroku
+
+---
+
+# capybara
+
+---
+
+# rspec
+
+---
+
+# Test Database
+
+---
+
+# Resources
+
+- https://www.djangoproject.com
