@@ -1,3 +1,7 @@
+- title: SongPro
+  description: A text file format for transcribing the chords and lyrics for a song and converting it to HTML.
+  icon: fa-music
+  url: https://songpro.org/
 - title: NYC Musicians, Singers & Songwriters
   description: Meetup group for getting together to jam or work on songwriting together. Includes chord/lyrics charts in desktop, mobile and PDF format.
   icon: fa-music
@@ -6,14 +10,6 @@
   description: Boy meets girl. Boy is the ship's computer. Boy loses girl.
   icon: fa-music
   url: https://spilth.bandcamp.com/track/escape-capsule
-- title: Navigate to Test
-  description: Visual Studio Code Extension to easy switch between implementation code and test code.
-  icon: fa-code
-  url: https://marketplace.visualstudio.com/items?itemName=spilth.navigate-to-test
-- title: Edit Latest Migration
-  description: RubyMine Plug-in to easy navigate to the most recent Ruby on Rails migration file.
-  icon: fa-code
-  url: https://plugins.jetbrains.com/plugin/10296-edit-latest-migration
 - title: Winter
   description: A song about how winter can intensify your longing for somebody.
   url: https://spilth.bandcamp.com/track/winter
@@ -29,10 +25,6 @@
 - title: Guitar Chord Chart PDF
   description: A PDF chart of basic/common guitar chords.
   url: /files/guitar-chords.pdf
-  icon: fa-music
-- title: Guitar Songs
-  description: A collection of songs for guitar meet ups.
-  url: /projects/guitar-songs/
   icon: fa-music
 - title: savant
   description: Command-line tool for searching for Java dependencies in Maven Central.
