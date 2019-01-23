@@ -1,0 +1,323 @@
+name: title
+class: middle, center
+
+# Grokking New Language Ecosystems
+
+### Never have I ever programmed in...
+
+### Getting friendly with an unfamiliar language
+
+#### Brian Kelly
+
+---
+
+# Format
+
+- General Suggestions & Questions
+- **Client-specific Suggestions & Questions**
+
+---
+
+# Take Notes
+
+Write down what you've learned as you learn it (if that works for you)
+
+- Use something like [Markdown](https://daringfireball.net/projects/markdown/syntax) that lets you easily embed code snippets and shell scripts
+- Keep a list of running questions and To Do items at the bottom
+- This can also help on-board other developers that are new to the language
+
+---
+
+# Find Out Why
+
+Why are we using this language?
+
+- **Why did the client choose this language?**
+- **Was the client using anything else previously?**
+
+---
+
+# Installation
+
+How do I easily install this language?
+
+- Is there a package for it?
+- Do I need any special environment settings?
+- How do I check which version is installed and available?
+- **Does the client have any custom installation or tooling for this language?**
+- **What version of the language is the client using?**
+
+---
+
+# Manging Multiple Versions
+
+Can I easily manage multiple versions of this language?
+
+- This is convenient when working on multiple projects using the same language but not necessarily running on the same version of it
+
+---
+
+# Hello, world!
+
+How do I get "Hello, world!" on the screen?
+
+- Learn language basics
+  - Do I need some kind of "main" class or method?
+  - What are the methods for output?
+- Learn how to write, compile* and run the simplest program
+- Helps ensure the language is installed correctly on your machine
+- Offers a quick peak of the build/run process
+
+\* Compile step is usually not required for interpreted languages
+
+---
+
+# REPL (Read Eval Print Loop)
+
+Is there a REPL available for this language?
+
+- Makes it easy to try things out creating a project without
+  - writing a program
+  - learning the debugger
+  - making my current code/project messy
+
+---
+
+# Project Structure
+
+
+- Is there a standard?
+  - If so, we should probably follow it
+
+---
+
+# Creating New Projects
+
+What does the directory structure for a new project look like for this language?
+
+
+Are there tools available for creating new projects easily?
+
+- executable projects
+- library projects
+- framework-specific initializers
+
+---
+
+# Documentation
+
+How do I find documentation pertinent to the version of the language I am using?
+
+- Language documentation
+- Standard Library documentation
+- Tools documentation
+
+Bookmark these or use [Dash](https://kapeli.com/dash)!
+
+---
+
+## Creating Documentation
+
+How do I document my library or application?
+
+- Where is documentation hosted?
+- Are there any client-specific guidelines for documentation?
+
+---
+
+# Version Control
+
+What does version control look like for this language?
+
+- What do I put in my `.gitignore` file?
+- What transient things are generated an compile time or run time?
+  - log files
+  - temporary files
+  - build files/binaries
+- Where are dependencies are stored locally?
+  - `node_modules`
+
+---
+
+# Build Tools
+
+What tools are available to automate the build process and other common tasks?
+
+- How do I provide and access the list of available tasks?
+- How do I make a custom task?
+- **Does the client have a build tool they've standardized on?**
+
+---
+
+# Dependency Management
+
+How do I specify the third party libraries I want to use and the version I need?
+
+- What tool is used for managing dependencies?
+- What file do I define dependencies in?
+- How do I automatically install them?
+- How do I see outdated dependencies?
+- How do I update a single dependency?
+- How do I update all dependency?
+
+---
+
+# Discovering Dependencies
+
+How do you find what you're looking for and how do you know if it's popular?
+
+- Used by many
+- Maintained
+- Low issue count
+- No glaring security issues
+
+---
+
+# Dependency Licenses
+
+**Does the client restrict any particular licenses or packages?**
+
+Consider using [License Finder](https://github.com/pivotal-legacy/LicenseFinder)
+
+---
+
+# Auditing Dependencies
+
+Is there a tool for reporting vulnerabilities in the libraries you are using?
+
+- How can you make it part of your build process?
+- How do you make vulnerabilities fail your CI build?
+
+---
+
+# Publishing Libraries
+
+How do I make the libraries I've created available to others?
+
+- How do I publish to a public hosting service?
+- How do I publish to a private hosting service?
+- **Does the client have an internal hosting service?**
+- **Does the client have any requirements for making libraries public?**
+
+---
+
+# Test Driven Development
+
+How do I effectively test drive behavior and code in this language?
+
+- Unit testing tools and frameworks
+- Feature testing tools
+- **How familiar is the client with TDD?**
+- **Does the client have any preferred TDD frameworks?**
+
+---
+
+# Static Analysis
+
+Are there tools available to analyze my code before committing it?
+
+- How can I get fast feedback?
+- **Does the client have any rule sets they use?**
+
+---
+
+# IDEs
+
+What IDEs are available for the language?
+
+- What is the most popular & well supported?
+- Does it have the following features:
+  - Syntax Highlighting
+  - Code Completion
+  - Refactoring Tools
+  - Testing Tools
+  - Debugging Tools
+  - Static Analysis Integration
+  - Scratch Pad or REPL
+- **What IDE do the client developers use?**
+
+---
+
+# Debugging
+
+How can I debug an issue during run time and test time?
+
+- How do I set breakpoints?
+- How do I view variable state?
+- How do I see a stacktrace?
+
+---
+
+# Packaging
+
+How do I bundle up an application so it can be run elsewhere?
+
+- Are there any OS specific considerations?
+- **Does the client have any requirements for application bundling?**
+
+---
+
+# Configuration & Environment Variables
+
+How can I leverage environment variables in this language to separate configuration from runtime?
+
+- dotenv
+
+---
+
+# Continuous Integration
+
+How do I set up a project in this language to build on a CI server?
+
+- What hosted CI services support this language?
+- **Does the client use a hosted CI service or a private one?**
+- **Does the client have a standardized CI script or requirements?**
+
+---
+
+# Learning Resources
+
+Where can I find learning resources for this language?
+
+- Are there any recommended books, online courses, newsletters, podcasts or screencasts for this language?
+- Are there are any [Awesome Lists for this language](https://github.com/sindresorhus/awesome#programming-languages)?
+- **Does the client have any documentation specific to their standards and processes?**
+
+---
+
+# Categorizing
+
+How do I categorize the language to understand it at a high level?
+
+- Origin Story
+- Compiled vs. Interpreted
+- Functional vs. Object Oriented
+- Strengths & Weaknesses
+- Static vs. Dyanmic Typing
+- Languge Idioms
+- Target Platform
+  - browser
+  - mobile device
+  - desktop
+  - embedded
+
+---
+
+# Topics
+
+What are some common concepts I might want to investigate?
+
+- numbers
+- strings
+- dates & time
+- files
+- collections
+- error handling
+- reflection
+- memory management
+- web development
+- i18n & l10n
+- network
+- templating
+- databases
+- json & xml
