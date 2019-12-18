@@ -2,34 +2,42 @@
   description: A text file format for transcribing the chords and lyrics for a song and converting it to HTML.
   icon: fa-music
   url: https://songpro.org/
+  image: /images/projects/songpro.png
 - title: NYC Musicians, Singers & Songwriters
   description: Meetup group for getting together to jam or work on songwriting together. Includes chord/lyrics charts in desktop, mobile and PDF format.
   icon: fa-music
   url: http://mss.nyc
+  image: /images/projects/mss-nyc.png
 - title: Escape Capsule
   description: Boy meets girl. Boy is the ship's computer. Boy loses girl.
   icon: fa-music
   url: https://spilth.bandcamp.com/track/escape-capsule
+  image: /images/projects/escape-capsule.jpg
 - title: Winter
   description: A song about how winter can intensify your longing for somebody.
   url: https://spilth.bandcamp.com/track/winter
   icon: fa-music
+  image: /images/projects/winter.jpg
 - title: Mission to Zyxx - Theme Cover
   description: A guitar rock cover of the Mission to Zyxx theme song.
   url: https://soundcloud.com/spilth/mission-to-zyxx-theme-cover
   icon: fa-music
+  image: /images/projects/mission-to-zyxx-theme.jpg
 - title: Who Reads Poetry?
   description: A podcast about poetry that I do the audio engineering and intro music for.
   url: https://itunes.apple.com/us/podcast/who-reads-poetry/id1291115585
   icon: fa-podcast
+  image: /images/projects/whoreadspoetry.png
 - title: Guitar Chord Chart PDF
   description: A PDF chart of basic/common guitar chords.
   url: /files/guitar-chords.pdf
   icon: fa-music
+  image: /images/projects/guitar-chords.png
 - title: savant
   description: Command-line tool for searching for Java dependencies in Maven Central.
   url: /projects/savant
   icon: fa-code
+  image: /images/projects/savant.png
 - title: Action Game Track
   description: A loopable piece of game music done in the style of Contra. Good for an action game.
   url: https://spilth.bandcamp.com/track/action-game
@@ -42,22 +50,25 @@
   description: A growing set of tools to help inspire songwriting.
   url: https://songmuse.herokuapp.com
   icon: fa-music
-- title: Thirty Six Questions
-  description: A set of questions to help generate closeness between two people.
-  url: http://36questions.life/
-  icon: fa-globe
+#- title: Thirty Six Questions
+#  description: A set of questions to help generate closeness between two people.
+#  url: http://36questions.spilth.org/
+#  icon: fa-globe
 - title: Carnival of Sorts (Cover)
   url: https://soundcloud.com/spilth/carnival-of-sorts-rem-cover-by-oliver-switzer-brian-kelly
   description: A cover of an old R.E.M. song, done with Oliver Switzer
   icon: fa-music
+  image: /images/projects/carnival-of-sorts.jpg
 - title: Cool With It
   icon: fa-music
   url: https://spilth.bandcamp.com/track/cool-with-it
   description: A song-a-month guitar piece done in February of 2016.
+  image: /images/projects/cool-with-it.jpg
 - title: Carry On
   icon: fa-music
   url: https://spilth.bandcamp.com/track/carry-on
   description: A song-a-month song done in only 24 hours. This was my personal anthem in January of 2016.
+  image: /images/projects/carry-on.jpg
 - title: TDD All the Languages!
   icon: fa-book
   url: http://tdd.spilth.org
@@ -66,18 +77,22 @@
   icon: fa-music
   url: https://spilth.bandcamp.com/track/first-flight
   description: November 2015's song-a-month songs. Another guitar instrumental, this time in 7/8.
+  image: /images/projects/first-flight.jpg
 - title: It's the Same for Everybody Else Here
   icon: fa-music
   url: https://spilth.bandcamp.com/track/its-the-same-for-everybody-else-here
   description: A bass-centric song-a-month song for October 2015.
+  image: /images/projects/its-the-same.jpg
 - title: Carriel
   icon: fa-music
   url: https://spilth.bandcamp.com/track/carriel
   description: For September's song-a-month this guitar shredder piece came out of nowhere. A poor man's Joe Satriani!
+  image: /images/projects/carriel.jpg
 - title: Only A Dream
   icon: fa-music
   url: https://spilth.bandcamp.com/track/only-a-dream
   description: August's song-a-month written while being away from a loved one.
+  image: /images/projects/only-a-dream.jpg
 - title: Annotated Spring
   icon: fa-youtube
   url: https://www.youtube.com/playlist?list=PL0qpO5Cy9JanIuFqJv1Xldz0LkXRDNmQa
@@ -110,26 +125,32 @@
   icon: fa-music
   url: https://soundcloud.com/spilth/mellotroid-theme
   description: The theme to Metroid, if it was performed by 1970's Genesis.
+  image: /images/projects/mellotroid.jpg
 - title: Granite Knolls Park Trail Map
   icon: fa-map-o
   url: http://wmba.org/?page_id=361
   description: A trail map for mountain biking in Granite Knolls.
+  image: /images/projects/granite-knolls.png
 - title: Woodlands Legacy Fields Park Trail Map
   icon: fa-map-o
   url: http://wmba.org/?page_id=364
   description: A trail map for mountain biking in Woodlands Legacy Fields Park.
+  image: /images/projects/woodlands-park.png
 - title: Graham Hills Park Trail Map
   icon: fa-map-o
   url: http://wmba.org/?page_id=64
   description: The first mountain biking trail map I ever made for the park that helped start my mountain biking journey.
+  image: /images/projects/graham-hills.png
 - title: Super Minimalistic
   icon: fa-gamepad
   url: http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=2895
   description: My entry for Ludum Dare 26 in April of 2013. A game where you do your best to avoid picking anything up, no matter how shiny and tempting!
+  image: /images/projects/super-minimalistic.png
 - title: Tiny World
   icon: fa-gamepad
   url: http://ludumdare.com/compo/ludum-dare-23/?action=preview&uid=2895
   description: A tiny, incomplete game written using Ruby/Chingu for Ludum Dare in April of 2012.
+  image: /images/projects/tinyworld.png
 - title: Pragmatic Guide to Maven
   icon: fa-book
   url: https://www.gitbook.com/book/spilth/pragmatic-guide-to-maven-3/details
@@ -138,19 +159,24 @@
   icon: fa-globe
   url: http://dracosaur.us
   description: A Rails app for tracking your collect of D &amp; D miniatures.
+  image: /images/projects/ddmdb.png
 - title: Marble Mania 2003
   icon: fa-gamepad
   url: /projects/marble-mania-2003
   description: An Unreal Tournament 2003 mod version of one of my all-time favorite arcade games - Marble Madness.
+  image: /images/projects/marble-mania-2003.png
 - title: Scavenger Hunt
   icon: fa-gamepad
   url: http://planetunreal.gamespy.com/View7ace.html?view=Articles.Detail&id=82
   description: A capture the flag variant created for the original Unreal Tournament.
+  image: /images/projects/scavenger-hunt.png
 - title: The Laundry Room - Self Titled Album
   icon: fa-music
   url: https://thelaundryroom.bandcamp.com/album/the-laundry-room
   description: My college band's self-titled album.
+  image: /images/projects/the-laundry-room.jpg
 - title: The Laundry Room - 5 Song E.P.
   icon: fa-music
   url: https://thelaundryroom.bandcamp.com/album/5-song-e-p
   description: My college band's 5 song CD. That's a compact disc for you young ones.
+  image: /images/projects/5-song-ep.jpg
