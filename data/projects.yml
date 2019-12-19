@@ -28,16 +28,16 @@
   url: https://itunes.apple.com/us/podcast/who-reads-poetry/id1291115585
   icon: fa-podcast
   image: /images/projects/whoreadspoetry.png
-- title: Guitar Chord Chart PDF
-  description: A PDF chart of basic/common guitar chords.
-  url: /files/guitar-chords.pdf
-  icon: fa-music
-  image: /images/projects/guitar-chords.png
-- title: savant
-  description: Command-line tool for searching for Java dependencies in Maven Central.
-  url: /projects/savant
-  icon: fa-code
-  image: /images/projects/savant.png
+# - title: Guitar Chord Chart PDF
+  # description: A PDF chart of basic/common guitar chords.
+  # url: /files/guitar-chords.pdf
+  # icon: fa-music
+  # image: /images/projects/guitar-chords.png
+# - title: savant
+  # description: Command-line tool for searching for Java dependencies in Maven Central.
+  # url: /projects/savant
+  # icon: fa-code
+  # image: /images/projects/savant.png
 - title: Action Game Track
   description: A loopable piece of game music done in the style of Contra. Good for an action game.
   url: https://spilth.bandcamp.com/track/action-game
