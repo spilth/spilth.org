@@ -28,16 +28,6 @@
   url: https://itunes.apple.com/us/podcast/who-reads-poetry/id1291115585
   icon: fa-podcast
   image: /images/projects/whoreadspoetry.png
-# - title: Guitar Chord Chart PDF
-  # description: A PDF chart of basic/common guitar chords.
-  # url: /files/guitar-chords.pdf
-  # icon: fa-music
-  # image: /images/projects/guitar-chords.png
-# - title: savant
-  # description: Command-line tool for searching for Java dependencies in Maven Central.
-  # url: /projects/savant
-  # icon: fa-code
-  # image: /images/projects/savant.png
 - title: Action Game Track
   description: A loopable piece of game music done in the style of Contra. Good for an action game.
   url: https://spilth.bandcamp.com/track/action-game
@@ -50,10 +40,6 @@
   description: A growing set of tools to help inspire songwriting.
   url: https://songmuse.herokuapp.com
   icon: fa-music
-#- title: Thirty Six Questions
-#  description: A set of questions to help generate closeness between two people.
-#  url: http://36questions.spilth.org/
-#  icon: fa-globe
 - title: Carnival of Sorts (Cover)
   url: https://soundcloud.com/spilth/carnival-of-sorts-rem-cover-by-oliver-switzer-brian-kelly
   description: A cover of an old R.E.M. song, done with Oliver Switzer
