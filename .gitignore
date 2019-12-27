@@ -22,3 +22,6 @@
 
 .idea
 /tmp
+
+# Local Netlify folder
+.netlify

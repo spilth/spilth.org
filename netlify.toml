@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/music"
+  to = "https://spilth.bandcamp.com/"
+
+[[redirects]]
+  from = "/code"
+  to = "https://github.com/spilth"
+
