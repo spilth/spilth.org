@@ -12,7 +12,7 @@ layout: home
   <div class="card-deck mb-2">
     <% projects.each do |project| %>
       <div class="card">
-        <img class="card-img-top" src="<%= project.image %>" alt="<%= project.title %>">
+        <a href="<%= project.url %>"><img class="card-img-top" src="<%= project.image %>" alt="<%= project.title %>"></a>
         <div class="card-body">
           <h5 class="card-title">
             <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
