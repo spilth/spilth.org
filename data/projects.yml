@@ -1,3 +1,8 @@
+- title: Jackbox Decider
+  description: Web app to help you decide which Jackbox game to play with your friends based on the number of people and other factors.
+  icon: fa-gamepad
+  url: https://jackbox.spilth.org
+  image: /images/projects/jackbox-decider.png
 - title: SongPro
   description: A text file format for transcribing the chords and lyrics for a song and converting it to HTML.
   icon: fa-music
