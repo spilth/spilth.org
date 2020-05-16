@@ -1,1 +1,1 @@
-# spilth.org [![Codeship](https://img.shields.io/codeship/fb177c20-b67c-0134-0004-06010e1e4b5f.svg)](https://app.codeship.com/projects/194383)
+# spilth.org [![Netlify Status](https://api.netlify.com/api/v1/badges/d2b698ef-b6d3-415f-a014-48e101320789/deploy-status)](https://app.netlify.com/sites/spilth/deploys)
