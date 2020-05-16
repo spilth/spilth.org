@@ -1,3 +1,13 @@
+- title: Musicians, Singers & Songwriters Meetups
+  description: NYC and Chattanooga Meetup groups for getting together to jam or work on songwriting together.
+  icon: fa-music
+  url: http://mss.band
+  image: /images/projects/mss-nyc.png
+- title: Escape Capsule (Nashville Edition)
+  description: A version of Escape Capsule recorded at Beaird Music Group in Nashville, TN
+  icon: fa-music
+  url: https://spilth.bandcamp.com/track/escape-capsule
+  image: /images/projects/escape-capsule-nashville.jpg
 - title: Jackbox Decider
   description: Web app to help you decide which Jackbox game to play with your friends based on the number of people and other factors.
   icon: fa-gamepad
@@ -8,11 +18,6 @@
   icon: fa-music
   url: https://songpro.org/
   image: /images/projects/songpro.png
-- title: NYC Musicians, Singers & Songwriters
-  description: Meetup group for getting together to jam or work on songwriting together. Includes chord/lyrics charts in desktop, mobile and PDF format.
-  icon: fa-music
-  url: http://mss.nyc
-  image: /images/projects/mss-nyc.png
 - title: Escape Capsule
   description: Boy meets girl. Boy is the ship's computer. Boy loses girl.
   icon: fa-music
