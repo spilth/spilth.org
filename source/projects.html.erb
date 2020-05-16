@@ -5,7 +5,7 @@ layout: home
 
 <p class="lead">Here are a bunch of things I've made or helped make.</p>
 
-<% data.projects.reject{ |p| p.image }.each_slice(3) do |projects| %>
+<% data.projects.reject { |p| p.image }.each_slice(3) do |projects| %>
   <div class="card-deck mb-2">
     <% projects.each do |project| %>
       <div class="card">
