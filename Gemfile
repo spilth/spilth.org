@@ -2,12 +2,11 @@
 
 source 'https://rubygems.org'
 
-gem 'rake'
-
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-compass'
 gem 'middleman-syntax'
-
 gem 'mime-types'
+gem 'nokogiri'
+gem 'rake'
 gem 'redcarpet'
