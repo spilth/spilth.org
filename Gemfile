@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'bundler-audit'
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-compass'
