@@ -1,27 +1,14 @@
 ---
-title: Brian Kelly - Software Engineer, Musician & Songwriter
-layout: home
+title: Hello!
 ---
 
-<h1>Hello!</h1>
 <p class="lead">My name is Brian Kelly. I am a software engineer by day, a songwriter by night and a geek most of the
   rest of the time. I live in Mentone, AL with <a href="https://www.comingupviolets.com">my girlfriend Amanda</a>.</p>
-<p class="lead">Here are a bunch of things I've made or helped make:</p>
 
-<!-- .reject{ |p| p.image == nil } -->
-<% data.projects.reject { |p| p.image == nil }.each_slice(3) do |projects| %>
-  <div class="card-deck mb-2">
-    <% projects.each do |project| %>
-      <div class="card">
-        <a href="<%= project.url %>"><img class="card-img-top" src="<%= project.image %>" alt="<%= project.title %>"></a>
-        <div class="card-body">
-          <h5 class="card-title">
-            <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
-            <a href="<%= project.url %>"><%= project.title %></a>
-          </h5>
-          <p class="card-text"><%= project.description %></p>
-        </div>
-      </div>
-    <% end %>
-  </div>
-<% end %>
+<p class="lead">Check out my <a href="/projects">projects page</a> to see the various things I've created or help create.</p>
+
+<p class="lead">If you want to find me elsewhere on the Internet, check out the <a href="/links">links page</a>.</p>
+
+<p class="lead">I very rarely write <a href="/blog/">blog posts</a> these days but there are a few you might find interesting.</p>
+
+<p class="lead">Lastly, if you're interested in a full-stack software engineer with 20+ years of experience, check out <a href="/resume/">my resume</a>.</p>
