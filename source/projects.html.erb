@@ -1,22 +1,21 @@
 ---
 title: Projects
-layout: home
 ---
 
 <p class="lead">Here are a bunch of things I've made or helped make.</p>
 
-<% data.projects.reject { |p| p.image }.each_slice(3) do |projects| %>
-  <div class="card-deck mb-2">
-    <% projects.each do |project| %>
-      <div class="card">
-        <img class="card-img-top" src="<%= project.image %>" alt="<%= project.title %>">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a href="<%= project.url %>"><%= project.title %></a>
-          </h5>
-          <p class="card-text"><%= project.description %></p>
-        </div>
-      </div>
-    <% end %>
+<% data.projects.reject { |p| p.image == nil }.each do |project| %>
+  <div class="row mb-4">
+    <div class="col-md-3 mb-2">
+      <a href="<%= project.url %>"><img class="img-thumbnail img-fluid" src="<%= project.image %>" alt="<%= project.title %>" width="100%" height="100%"/></a>
+    </div>
+    <div class="col-md-8">
+      <h3 class="mt-0 mb-1">
+        <i class="fa fa-fw <%= project.icon %>" aria-hidden="true"></i>
+        <a href="<%= project.url %>"><%= project.title %></a></h3>
+      <p class="lead"><%= project.description %></p>
+    </div>
+    <div class="col-md-1 ">
+    </div>
   </div>
 <% end %>
